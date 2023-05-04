@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 const Navbar: React.FunctionComponent = () => {
 	return (
-		<nav className="h-full  shadow-[0_8px_24px_rgba(149,157,165,0.2)] min-h-[5rem]">
-			<div className="max-w-[80rem] flex justify-between w-full items-center mx-auto min-h-[5rem] px-4 py-2 ">
+		<nav className="h-full  shadow-[0_8px_24px_rgba(149,157,165,0.2)] min-h-[6rem]">
+			<div className="max-w-[80rem] flex justify-between w-full items-center mx-auto min-h-[6rem] px-4 py-2 ">
 				<div className="logo cursor-pointer 0">
 					<Image className="relative" src="/afriwave123.png" alt="Next.js Logo" width={110} height={20} priority />
 				</div>
 
 				<div className="ml-auto">
-					<ul className="nav_links">
+					<ul className="nav_links flex gap-8 items-center">
 						<li className="current">
 							<a href="#">Home</a>
 						</li>
