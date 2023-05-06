@@ -1,42 +1,3 @@
-<!-- <div class="carousel-container">
-  <div
-    *ngFor="let item of headerInfo; let i = index"
-    class="fade"
-    [ngClass]="selectedIndex === i ? 'item-active' : 'header-item'"
-  >
-    <div class="max-w-[50rem] text-center sm:text-left font-bold">
-      <h1
-        class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
-      >
-        {{ item.title }}
-      </h1>
-    </div>
-
-    <p
-      class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
-    >
-      {{ item.info }}
-    </p>
-  </div>
-</div> -->
-
-<!-- <div
-      class="slide"
-      *ngIf="i === currentSlide"
-      class="slide"
-      [@slideAnimation]="animationType"
-      [style.background]="
-        'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(' +
-        slide.imageUrl +
-        ')'
-      "
-      style="
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      "
-    ></div> -->
-<!-- carousel -->
 <div class="carousel">
   <ng-container *ngFor="let slide of slides; let i = index">
     <div
@@ -51,8 +12,8 @@
         style="
           background: linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)
           );
           z-index: 1;
         "

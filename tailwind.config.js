@@ -20,7 +20,7 @@ module.exports = {
         mobileSubText: "1rem",
       },
       colors: {
-        primary: "#0A67C7",
+        primary: "#053053",
         warn: "#FF9900",
         "primary-dark": "#003469",
         "footer-bg": "#00172F",

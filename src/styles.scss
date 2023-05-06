@@ -14,6 +14,13 @@ body {
   // scroll-padding: 2rem;
 }
 
+@layer utilities {
+  .grid-cols-minmax {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  }
+}
+
 /* Animation */
 
 @keyframes fade-up {
@@ -49,10 +56,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   background-image: -webkit-linear-gradient(
     90deg,
-    rgb(9 103 199) 0%,
-    rgb(9 103 199) 25%,
+    #063053 0%,
+    #063053 25%,
     transparent 100%,
-    rgb(9 103 199) 75%,
+    #063053 75%,
     transparent
   );
 }
