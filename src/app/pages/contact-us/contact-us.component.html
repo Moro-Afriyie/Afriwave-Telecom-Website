@@ -1,0 +1,214 @@
+<div class="text-text-black">
+  <!--Begin Intro Section-->
+  <section
+    style="
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('../../../assets/ContactUsLarge.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    "
+    class="h-[16rem] md:h-[32rem] flex items-center justify-center w-full relative"
+  >
+    <h1 class="text-mobileMainText sm:text-mainText font-bold text-white">
+      Contact Us
+    </h1>
+  </section>
+  <!--End Intro Section-->
+  <!--Begin Contact Form-->
+  <section
+    class="my-16 px-6 sm:px-20 tablet:px-0 flex w-full items-center flex-col justify-center"
+  >
+    <div class="max-w-[73rem] w-full">
+      <div
+        class="flex flex-col flex-wrap sm:flex-row mb-20 gap-3 sm:gap-10 tablet:gap-32 w-full text-text-black"
+      >
+        <div class="text-mobileSubText md:text-subText">
+          <h1 class="my-2 font-bold">Adress</h1>
+          <p>6671 Southwest Fwy, Suite 300H</p>
+          <p>Houston, Texas 77074</p>
+        </div>
+        <div class="text-mobileSubText md:text-subText">
+          <h1 class="my-2 font-bold">Phone</h1>
+          <p class="font-normal">+1 (713) 369-0997</p>
+        </div>
+        <div class="text-mobileSubText md:text-subText">
+          <h1 class="my-2 font-bold">Email</h1>
+          <p>admin@voltican.com</p>
+        </div>
+      </div>
+      <form class="w-full tablet:px-0">
+        <div class="flex flex-col md:flex-row gap-8 justify-between w-full">
+          <!--name-->
+          <div
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
+          >
+            <div class="relative w-full">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pointer-events-none"
+              >
+                <span
+                  class="iconify text-3xl"
+                  data-icon="carbon:user-filled"
+                ></span>
+              </div>
+              <input
+                type="text"
+                id="name"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                placeholder="Name"
+              />
+            </div>
+          </div>
+          <!--Email-->
+          <div
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
+          >
+            <div class="relative w-full">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pointer-events-none"
+              >
+                <span
+                  class="iconify text-3xl"
+                  data-icon="fa6-solid:envelope-open-text"
+                ></span>
+              </div>
+              <input
+                type="email"
+                id="email"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                placeholder="example@gmail.com"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col tablet:flex-row gap-8 mt-10 justify-between w-full"
+        >
+          <!--Subject-->
+          <div
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
+          >
+            <div class="relative w-full">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pointer-events-none"
+              >
+                <span
+                  class="iconify text-3xl"
+                  data-icon="fa-solid:address-card"
+                ></span>
+              </div>
+              <input
+                type="text"
+                id="subject"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                placeholder="Subject"
+              />
+            </div>
+          </div>
+          <!--phone number-->
+          <div
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
+          >
+            <div class="relative w-full">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pointer-events-none"
+              >
+                <span
+                  class="iconify text-3xl"
+                  data-icon="ic:baseline-phone-iphone"
+                ></span>
+              </div>
+              <input
+                type="text"
+                id="phoneNumber"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                placeholder="Phone Number"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex mt-20 pt-3 justify-between w-full">
+          <!--Subject-->
+          <div class="form-control relative w-full">
+            <label
+              for="message"
+              class="text-mobileSubText md:text-subText text-text-gray"
+              >Enter Your Messages</label
+            >
+            <div class="relative w-full">
+              <textarea
+                type="text"
+                id="subject"
+                class="block py-6 w-full border-b-2 h-[6rem] text-mobileSubText md:text-subText border-border-gray focus:outline-none focus:border-text-black"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 sm:flex-row w-full sm:mt-3 sm:items-center justify-between"
+        >
+          <p class="text-text-gray text-[0.8rem] md:text-subText">
+            *Your email address will not be published.
+          </p>
+          <button
+            class="px-10 w-full sm:w-max py-3 bg-primary-dark text-xl text-white"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!--End Contact Form-->
+  <!--Map-->
+  <!-- <section class="h-[30rem] border border-red-900 w-full max-w-[73rem] mx-auto">
+    map goes here
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+  </section> -->
+  <!-- <section
+    style="
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('../../../assets/CLientsLarge.jpeg');
+    "
+    data-aos="fade-up"
+    data-aos-delay="400"
+    class="w-full text-white mix-blend-normal bg-black/60 text-center mt-16 bg-no-repeat bg-cover bg-center gap-8 flex flex-col items-center justify-center h-full min-h-[40rem]"
+  >
+    <h1
+      class="text-mobileHeading p-2 sm:text-heading font-bold"
+      data-aos="fade-left"
+      data-aos-delay="300"
+    >
+      We specialize in aligning your strategy and technology needs to your
+      business strategy.
+    </h1>
+    <p
+      class="max-w-[49rem] w-full text-mobileSubText md:text-subText"
+      data-aos="fade-right"
+      data-aos-delay="300"
+    >
+      Our reputation is driven by a strong conviction that a successful business
+      investment requires an attention to detail to unlock value for any
+      investment.
+    </p>
+    <button
+      class="px-10 mt-6 w-max py-3 bg-primary text-xl text-white"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      routerLink="/contact-us"
+    >
+      Contact us
+    </button>
+  </section> -->
+</div>

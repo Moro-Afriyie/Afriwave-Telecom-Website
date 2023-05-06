@@ -1,0 +1,151 @@
+<app-loader *ngIf="isLoading"></app-loader>
+
+<form class="max-w-[70rem] px-4 w-full mx-auto my-8" *ngIf="!isLoading">
+  <div class="mb-8">
+    <h1 class="text-mobileHeading">{{ job.title }}</h1>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined"> location_on </span>
+      <span>{{ job.location }}</span>
+    </div>
+  </div>
+  <div class="flex flex flex-col gap-0 sm:flex-row sm:justify-between sm:gap-6">
+    <div class="mb-6 flex-grow">
+      <label
+        for="name"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >Name</label
+      >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+    <div class="mb-6 flex-grow">
+      <label
+        for="email"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >Email</label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+  </div>
+  <div class="flex flex-col gap-0 sm:flex-row sm:justify-between sm:gap-6">
+    <div class="mb-6 flex-grow">
+      <label
+        for="mobile"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >Mobile</label
+      >
+      <input
+        type="text"
+        id="mobile"
+        name="mobile"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+    <div class="mb-6 flex-grow">
+      <label
+        for="streetAddress"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >Street Address</label
+      >
+      <input
+        type="text"
+        id="streetAddress"
+        name="streetAddress"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+  </div>
+  <div class="flex flex-col gap-0 sm:flex-row sm:justify-between sm:gap-6">
+    <div class="mb-6 flex-grow">
+      <label
+        for="building"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >Apt/Suite/Building</label
+      >
+      <input
+        type="text"
+        id="building"
+        name="building"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+    <div class="mb-6 flex-grow">
+      <label
+        for="city"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >City</label
+      >
+      <input
+        type="text"
+        id="city"
+        name="city"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+  </div>
+  <div class="flex flex-col gap-0 sm:flex-row sm:justify-between sm:gap-6">
+    <div class="mb-6 flex-grow">
+      <label
+        for="state"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >State</label
+      >
+      <input
+        type="text"
+        id="state"
+        name="state"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+    <div class="mb-6 flex-grow">
+      <label
+        for="email"
+        class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+        >Zip</label
+      >
+      <input
+        type="text"
+        id="zip"
+        name="zip"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      />
+    </div>
+  </div>
+  <div class="mb-6 max-w-[34rem] flex-grow">
+    <label
+      for="resume"
+      class="block mb-2 after:content-['*'] after:text-red-400 font-medium text-gray-900"
+      >Upload Resume</label
+    >
+    <input
+      type="file"
+      id="resume"
+      name="resume"
+      class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+      required
+    />
+  </div>
+
+  <button
+    class="px-10 capitalize mt-auto w-max py-3 rounded-md bg-primary text-xl text-white"
+  >
+    Submit
+  </button>
+</form>

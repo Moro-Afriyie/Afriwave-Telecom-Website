@@ -1,0 +1,183 @@
+<main class="min-h-screen relative text-text-black w-full">
+  <app-navbar></app-navbar>
+  <div class="mt-20">
+    <router-outlet></router-outlet>
+    <!--Begin Seciton 3-->
+    <!-- <section
+    style="
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('../../../assets/CLientsLarge.jpeg');
+    "
+    data-aos="fade-up"
+    data-aos-delay="400"
+    class="w-full text-white mix-blend-normal bg-black/60 text-center mt-16 bg-no-repeat bg-cover bg-center gap-8 flex flex-col items-center justify-center h-full min-h-[40rem]"
+  >
+    <h1
+      class="text-mobileHeading p-2 sm:text-heading font-bold"
+      data-aos="fade-left"
+      data-aos-delay="300"
+    >
+      We specialize in aligning your strategy and technology needs to your
+      business strategy.
+    </h1>
+    <p
+      class="max-w-[49rem] w-full text-mobileSubText sm:text-subText"
+      data-aos="fade-right"
+      data-aos-delay="300"
+    >
+      Our reputation is driven by a strong conviction that a successful business
+      investment requires an attention to detail to unlock value for any
+      investment.
+    </p>
+    <button
+      class="px-10 mt-6 w-max py-3 bg-primary text-xl text-white"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      routerLink="/contact-us"
+    >
+      Contact us
+    </button>
+  </section> -->
+    <!--End Seciton 3-->
+    <!--Begin Testimonial Section-->
+    <section
+      class="w-full px-6 sm:px-10 text-center gap-4 my-32 flex flex-col items-center justify-center min-h-[40rem]"
+    >
+      <h1 class="text-[1.5rem] sm:text-[1.75rem] font-bold">Testimonial</h1>
+      <h1 class="text-mobileHeading sm:text-heading font-bold">
+        What our clients are saying
+      </h1>
+      <!--testimonial section-->
+      <div
+        class="max-w-[73rem] flex-col tablet:flex-row flex mt-10 items-center justify-between gap-16 w-full tablet:h-[38.75rem]"
+      >
+        <!--customer image-->
+        <div
+          class="w-full max-w-[33rem] h-[20rem] md:h-[25rem] flex-shrink-0 flex-grow-0 basis=[33rem] tablet:h-full bg-gray-500"
+        ></div>
+        <!--customer testimonial-->
+        <div
+          class="md:w-[33rem] lg:w-auto w-full flex-grow flex tablet:pb-20 gap-5 tablet:gap-0 flex-col justify-between text-left"
+        >
+          <!--Ratings-->
+          <div class="flex gap-2">
+            <span
+              *ngFor="let item of [1, 2, 3, 4]"
+              class="iconify text-3xl text-warn"
+              data-icon="carbon:star-filled"
+            ></span>
+            <span
+              *ngFor="let item of [1]"
+              class="iconify text-3xl"
+              data-icon="carbon:star"
+            ></span>
+          </div>
+          <!--testimonial-->
+          <p
+            class="text-left text-mobileSubText sm:text-subText text-[#6F6D71] font-normal"
+          >
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt."
+          </p>
+          <div>
+            <!--name-->
+            <p class="text-[1.75rem] font-black">Howard Arlene</p>
+            <!--position-->
+            <p class="text-[#6F6D71] font-normal text-xl">Finance Manager</p>
+          </div>
+          <!--controls-->
+          <div class="flex gap-8">
+            <button class="w-12 h-12 border border-text-black">
+              <span
+                class="iconify text-2xl m-auto"
+                data-icon="ep:arrow-left-bold"
+              ></span>
+            </button>
+            <button class="w-12 h-12 border border-text-black">
+              <span
+                class="iconify text-2xl m-auto"
+                data-icon="ep:arrow-right-bold"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Testimonial Section-->
+    <!--Begin News letter Section-->
+    <section
+      class="min-h-[18.8rem] px-6 sm:px-10 py-6 tablet:py-0 mt-8 sm:mt-32 flex flex-col tablet:flex-row gap-10 items-center justify-center bg-primary"
+    >
+      <div class="text-white">
+        <h1 class="text-mobileMainText sm:text-mainText font-bold mb-4">
+          Newsletter
+        </h1>
+        <p
+          class="text-mobileSubText sm:text-subText font-normal max-w-[31.4rem] w-full"
+        >
+          Signup our newsletter to get update information, news or insight.
+        </p>
+      </div>
+      <div
+        class="flex w-full sm:w-auto flex-col gap-4 tablet:flex-row sm:gap-8"
+      >
+        <input
+          type="email"
+          id="email"
+          class="bg-transparent border border-gray-300 h-12 sm:h-[4rem] text-white placeholder:text-white text-lg sm:text-xl focus:ring-blue-500 focus:border-blue-500 block px-4 md:w-[30.5rem] w-full"
+          placeholder="Enter your email"
+          required
+        />
+        <button
+          class="px-10 w-full tablet:w-max py-3 bg-primary-dark text-xl text-white"
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <!--Begin Trusted companies-->
+    <section
+      class="max-w-[80rem] px-6 py-4 sm:px-10 sm:py-10 mx-auto mt-20 w-full"
+    >
+      <h1
+        class="text-[1.5rem] sm:text-[1.75rem] my-4 text-[#010101] font-bold text-center"
+      >
+        Our Trusted Company
+      </h1>
+      <h2
+        class="text-center text-subText mb-4 sm:text-mobileHeading text-[#010101]"
+      >
+        Some Technology Partners and Satisfied clients
+      </h2>
+
+      <p
+        class="text-center font-light mx-auto text-[#010101] text-mobileSubText sm:text-subText max-w-[60.25rem] mt-5 w-full"
+      >
+        We can work with you to fully understand your specific IT needs and
+        build a customized solution that empowers your business. Furthermore, we
+        have developed long relationships with our clients based on mutual
+        trust, respect and high-value, durable results.
+      </p>
+      <div class="my-16 w-full flex justify-between gap-10">
+        <figure>
+          <div class="wdcl-overlay" data-icon=""></div>
+          <img
+            class="wdcl-main-img"
+            src="../assets/partnersandclients Large.jpeg"
+            alt=""
+          />
+        </figure>
+      </div>
+    </section>
+    <app-footer></app-footer>
+  </div>
+</main>

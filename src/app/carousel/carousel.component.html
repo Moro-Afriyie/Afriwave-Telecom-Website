@@ -1,0 +1,21 @@
+<div class="carousel-container">
+  <div
+    *ngFor="let item of headerInfo; let i = index"
+    class="fade"
+    [ngClass]="selectedIndex === i ? 'item-active' : 'header-item'"
+  >
+    <div class="max-w-[50rem] text-center sm:text-left font-bold">
+      <h1
+        class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
+      >
+        {{ item.title }}
+      </h1>
+    </div>
+
+    <p
+      class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
+    >
+      {{ item.info }}
+    </p>
+  </div>
+</div>

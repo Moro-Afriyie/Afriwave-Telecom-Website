@@ -1,0 +1,327 @@
+<nav
+  class="w-full fixed top-0 bg-white z-30 shadow-xl px-4 xl:px-10 2xl:px-32 py-6 sm:py-2 flex items-center justify-between min-h-[3.5rem] 2xl:min-h-[5rem]"
+>
+  <div
+    class="logo h-[2.5rem] w-[8rem] cursor-pointer sm:w-[15.5rem] sm:h-[4.6rem]"
+    routerLink="/"
+  >
+    <img
+      src="../../../assets/VolticanLogo.png"
+      class="w-full h-full object-cover"
+      alt="logo"
+    />
+  </div>
+
+  <button
+    class="rounded-lg tablet:hidden focus:outline-none focus:shadow-outline"
+    (click)="onToggleMenu()"
+  >
+    <svg fill="#0967c8" viewBox="0 0 20 20" class="w-8 h-8">
+      <path
+        x-show="!open"
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+  <!--nav links-->
+  <ul
+    class="hidden tablet:flex text-primary font-normal text-base gap-8 items-center"
+  >
+    <li
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="cursor-pointer hover:font-bold"
+      (click)="onCloseDropdownMenu()"
+    >
+      <a>Home</a>
+    </li>
+    <li class="group cursor-pointer hover:font-bold relative">
+      <p class="flex gap-3 items-center" (click)="onServicesMenu()">
+        Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
+      </p>
+
+      <div
+        id="dropdown"
+        *ngIf="services"
+        class="-left-10 absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+      >
+        <ul
+          class="py-1 text-base font-normal text-primary"
+          aria-labelledby="dropdownDefault"
+        >
+          <li
+            routerLink="/services/data-analytics"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100"
+              >Data Analytics &amp; Modern BI</a
+            >
+          </li>
+          <li
+            routerLink="/services/big-data-and-engineering"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100"
+              >Big Data &amp; Engineering</a
+            >
+          </li>
+          <li
+            routerLink="/services/strategy-and-architecture"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100"
+              >Strategy &amp; Architecture</a
+            >
+          </li>
+          <li
+            routerLink="/services/data-science"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Data Science/AI/ML</a>
+          </li>
+          <li
+            routerLink="/services/other-services"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li
+      routerLink="/certifications"
+      routerLinkActive="active"
+      class="hover:font-bold cursor-pointer"
+      (click)="onCloseDropdownMenu()"
+    >
+      <a>Certifications/Contract Vehicles</a>
+    </li>
+    <li class="group hover:font-bold cursor-pointer relative">
+      <p class="flex gap-3 items-center" (click)="onShowAboutUsMenu()">
+        About us <span class="iconify" data-icon="ep:arrow-down-bold"></span>
+      </p>
+      <div
+        id="dropdown"
+        *ngIf="aboutUs"
+        class="absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+      >
+        <ul
+          class="py-1 text-base font-normal text-primary"
+          aria-labelledby="dropdownDefault"
+        >
+          <li
+            routerLink="/about/voltican-edge"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Voltican Edge</a>
+          </li>
+          <li
+            routerLink="/about/clientele"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Clientele</a>
+          </li>
+          <!-- <li
+            routerLink="/about/our-experts"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Our Experts</a>
+          </li> -->
+        </ul>
+      </div>
+    </li>
+
+    <li
+      routerLink="/careers"
+      routerLinkActive="active"
+      class="hover:font-bold cursor-pointer"
+      (click)="onCloseDropdownMenu()"
+    >
+      <a>Careers</a>
+    </li>
+    <li
+      class="hover:font-bold cursor-pointer"
+      routerLink="/contact-us"
+      routerLinkActive="active"
+      (click)="onCloseDropdownMenu()"
+    >
+      <a>Contact Us</a>
+    </li>
+  </ul>
+  <!--End nav links-->
+  <!-- <div class="flex gap-8 text-primary items-center">
+    <button
+      class="text-xl 2xl:text-[1.5rem] 2xl:h-[3.75rem] h-[2.75rem] font-bold px-8 border-2 border-primary"
+    >
+      Contact Us
+    </button>
+    <span
+      class="iconify text-3xl cursor-pointer"
+      data-icon="fa-solid:search"
+    ></span>
+  </div> -->
+</nav>
+<div
+  class="z-50 tablet:hidden fixed top-0 left-0 right-0 bottom-0 h-full w-full bg-black/60"
+  *ngIf="toggleMobileMenu"
+>
+  <div
+    data-aos="zoom-in"
+    data-aos-duration="200"
+    class="bg-white flex flex-col items-center cursor-pointer px-6 pt-4 pb-10 gap-5 min-h-[20rem] w-full transition ease-out duration-100"
+  >
+    <svg
+      fill="#0967c8"
+      viewBox="0 0 20 20"
+      class="w-8 h-8 self-end"
+      (click)="onToggleMenu()"
+    >
+      <path
+        x-show="open"
+        fill-rule="evenodd"
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+
+    <div class="w-full flex-grow max-w-[30rem]">
+      <ul class="flex flex-col text-primary font-normal text-base gap-8">
+        <li
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="cursor-pointer hover:font-bold"
+          (click)="onCloseDropdownMenu()"
+        >
+          <a>Home</a>
+        </li>
+        <li class="group cursor-pointer hover:font-bold relative">
+          <p class="flex gap-3 items-center" (click)="onServicesMenu()">
+            Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
+          </p>
+
+          <div id="dropdown" *ngIf="services" class="w-full divide-y">
+            <ul
+              class="py-1 text-base font-normal text-primary"
+              aria-labelledby="dropdownDefault"
+            >
+              <li
+                routerLink="/services/data-analytics"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100"
+                  >Data Analytics &amp; Modern BI</a
+                >
+              </li>
+              <li
+                routerLink="/services/big-data-and-engineering"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100"
+                  >Big Data &amp; Engineering</a
+                >
+              </li>
+              <li
+                routerLink="/services/strategy-and-architecture"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100"
+                  >Strategy &amp; Architecture</a
+                >
+              </li>
+              <li
+                routerLink="/services/data-science"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100"
+                  >Data Science/AI/ML</a
+                >
+              </li>
+              <li
+                routerLink="/services/other-services"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li
+          routerLink="/certifications"
+          routerLinkActive="active"
+          class="hover:font-bold cursor-pointer"
+          (click)="onCloseDropdownMenu()"
+        >
+          <a>Certifications/Contract Vehicles</a>
+        </li>
+        <li class="group hover:font-bold cursor-pointer relative">
+          <p class="flex gap-3 items-center" (click)="onShowAboutUsMenu()">
+            About us
+            <span class="iconify" data-icon="ep:arrow-down-bold"></span>
+          </p>
+          <div id="dropdown" *ngIf="aboutUs" class="w-full divide-y">
+            <ul
+              class="py-1 text-base font-normal text-primary"
+              aria-labelledby="dropdownDefault"
+            >
+              <li
+                routerLink="/about/voltican-edge"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100">Voltican Edge</a>
+              </li>
+              <li
+                routerLink="/about/clientele"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100">Clientele</a>
+              </li>
+              <!-- <li
+                routerLink="/about/our-experts"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100">Our Experts</a>
+              </li> -->
+            </ul>
+          </div>
+        </li>
+
+        <li
+          routerLink="/careers"
+          routerLinkActive="active"
+          class="hover:font-bold cursor-pointer"
+          (click)="onCloseDropdownMenu()"
+        >
+          <a>Careers</a>
+        </li>
+        <li
+          class="hover:font-bold cursor-pointer"
+          routerLink="/contact-us"
+          routerLinkActive="active"
+          (click)="onCloseDropdownMenu()"
+        >
+          <a>Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

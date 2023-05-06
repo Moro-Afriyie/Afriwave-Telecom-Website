@@ -1,0 +1,54 @@
+<section>
+  <div class="w-full">
+    <app-loader *ngIf="isLoading"></app-loader>
+    <div *ngIf="!isLoading">
+      <div class="h-max py-8 px-4 bg-[#f3f5fb] w-full">
+        <div class="">
+          <h1 class="text-mobileHeading capitalize text-center font-bold">
+            {{ job.title }}
+          </h1>
+          <h3 class="">
+            <ul
+              class="flex-col gap-4 career-break:flex-row flex sm:gap-8 my-4 w-full justify-center items-center"
+            >
+              <li
+                class="bg-[#ff5a5f] w-max px-4 rounded-md font-semibold text-white text-lg"
+              >
+                {{ job.jobType }}
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined"> location_on </span>
+                <span>{{ job.location }}</span>
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined"> calendar_today </span>
+                <span>Posted on: {{ job.datePosted | date }}</span>
+              </li>
+
+              <button
+                [routerLink]="['/careers/apply-now', job.jobId]"
+                class="px-10 capitalize mt-auto w-max rounded-md py-3 bg-primary text-xl text-white"
+              >
+                Apply Now
+              </button>
+            </ul>
+          </h3>
+        </div>
+      </div>
+
+      <div class="max-w-[70rem] w-full mx-auto">
+        <div class="w-full px-7 py-5" [innerHTML]="htmlContent"></div>
+        <div class="w-full px-7">
+          <button
+            [routerLink]="['/careers/apply-now', job.jobId]"
+            class="px-10 capitalize mt-auto w-max rounded-md py-3 bg-primary text-xl text-white"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

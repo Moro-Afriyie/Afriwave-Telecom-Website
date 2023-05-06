@@ -1,0 +1,55 @@
+<section
+  class="px-6 py-4 sm:px-10 sm:py-6 flex w-full items-center gap-8 flex-col justify-center"
+>
+  <div>
+    <h1 class="text-mobileHeading sm:text-heading my-7 text-center font-bold">
+      Careers
+    </h1>
+    <p
+      class="text-justify mb-10 text-mobileSubText sm:text-subText max-w-[60.25rem] w-full text-text-gray"
+    >
+      Voltican is not just another great technology company; it's a family with
+      values, a culture, and aspirations and where family members have
+      responsibilities. Over the years, we have created a beautiful working
+      environment that enables all of our employees to learn more every day, to
+      collaborate and eventually to develop in ways that not only benefit us as
+      a company but also benefit you as an individual.Voltican is a place to
+      succeed. if you are driven to join the team, check this page for available
+      vacancies and apply. Looking forward to bringing you into the fold.
+    </p>
+  </div>
+  <div class="max-w-[73rem] w-full">
+    <app-loader *ngIf="isLoading"></app-loader>
+    <div
+      class="gap-6 grid grid-cols-1 sm:grid-cols-2 w-full"
+      *ngIf="!isLoading"
+    >
+      <div
+        *ngFor="let job of jobs$ | async"
+        class="relative cursor-pointer w-full flex p-8 max-w-[35.6rem] min-h-[18.3rem] bg-white shadow-[0_19px_33px_rgba(0,0,0,0.13)]"
+        [routerLink]="['/careers/view-details', job.jobId]"
+      >
+        <div class="text-[#2D2323] flex flex-col gap-4 w-full">
+          <p class="text-mobileSubText sm:text-[1.7rem] capitalize font-bold">
+            {{ job.title }}
+          </p>
+          <p
+            class="text-xl text-mobileSubText sm:text-subText flex-grow text-text-gray"
+          >
+            {{ job.location }}
+          </p>
+          <p
+            class="text-xl text-mobileSubText sm:text-subText flex-grow text-text-gray"
+          >
+            Posted on: <span>{{ job.datePosted | date }}</span>
+          </p>
+          <button
+            class="px-10 capitalize mt-auto w-max py-3 bg-primary text-xl text-white"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
