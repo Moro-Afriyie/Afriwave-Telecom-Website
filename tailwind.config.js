@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        "intro-page-height": "85vh",
+        "intro-page-height": "50rem",
       },
       screens: {
         tablet: "900px",
