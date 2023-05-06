@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import * as AOS from 'aos';
+import { Slide } from 'src/app/@types';
+import { AnimationType } from 'src/app/carousel/carousel.animations';
+import { CarouselComponent } from 'src/app/carousel/carousel.component';
 
 @Component({
   selector: 'app-home',
@@ -7,26 +10,55 @@ import * as AOS from 'aos';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  headerInfo = [
+  @ViewChild(CarouselComponent) carousel: CarouselComponent =
+    {} as CarouselComponent;
+
+  animationType = AnimationType.Fade;
+
+  // animationTypes = [
+  //   {
+  //     name: 'Scale',
+  //     value: AnimationType.Scale,
+  //   },
+  //   {
+  //     name: 'Fade',
+  //     value: AnimationType.Fade,
+  //   },
+  //   {
+  //     name: 'Flip',
+  //     value: AnimationType.Flip,
+  //   },
+  //   {
+  //     name: 'Jack In The Box',
+  //     value: AnimationType.JackInTheBox,
+  //   },
+  // ];
+  slides: Slide[] = [
     {
-      title: 'Data Analytics & Modern BI ',
-      info: 'The insights that can be drawn from good analytics will help your business to properly understand industry and market data and place you in a better position ',
-      link: '/services/data-analytics',
+      title: 'Interconnect Clearing House (ICH)',
+      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      imageUrl: 'https://www.afriwavetelecom.com/img/banner3.jpg',
+      link: '',
     },
     {
-      title: 'Big Data Engineering',
-      info: 'We employ cost-effective, innovative forms of information processing for enhanced insight and decision-making.',
-      link: '/services/big-data-and-engineering',
+      title: 'Traffic Monitoring',
+      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      imageUrl:
+        'https://e0.pxfuel.com/wallpapers/681/276/desktop-wallpaper-able-avgeek-background-for-your-next-video-call-air-traffic-control.jpg',
+      link: '',
     },
     {
-      title: 'Strategy & Architecture ',
-      info: 'Following widely accepted and proven data strategy standards, Voltican has put together custom strategies for various companies that address your specific organizational needs',
-      link: '/services/strategy-and-architecture',
+      title: 'Telecommunication Networks',
+      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      imageUrl: 'https://www.afriwavetelecom.com/img/banner2.jpg',
+      link: '',
     },
     {
-      title: ' Data Science & ML ',
-      info: 'At Voltican, we help your company employ the best tools and technology for the application of AI and ML in your business processes',
-      link: '/services/data-science',
+      title: 'Data Centers',
+      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      link: '',
+      imageUrl:
+        'https://www.intelligentdatacentres.com/wp-content/uploads/sites/34/2020/08/AdobeStock_350459236-WEBISTE.jpg',
     },
   ];
 
@@ -38,15 +70,14 @@ export class HomeComponent implements OnInit {
     AOS.init();
     // autoslide items
     setInterval(() => {
-      this.onNextItem();
+      this.carousel.onNextClick();
     }, 6000);
   }
 
-  onNextItem() {
-    if (this.selectedIndex === this.headerInfo.length - 1) {
-      this.selectedIndex = 0;
-    } else {
-      this.selectedIndex += 1;
-    }
+  setAnimationType(type: any) {
+    this.animationType = type.value;
+    setTimeout(() => {
+      this.carousel.onNextClick();
+    });
   }
 }

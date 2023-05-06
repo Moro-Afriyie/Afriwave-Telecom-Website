@@ -1,37 +1,11 @@
 <div class="text-text-black">
   <!--Begin Intro Section-->
-  <section
-    style="
-      background: url('../../../assets/newHeaderFallback.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    "
-    class="h-intro-page-height w-full relative"
-  >
-    <video
-      autoplay
-      muted
-      loop
-      id="myVideo"
-      class="absolute top-0 bottom-0 right-0 left-0 w-full h-full object-cover"
-    >
-      <source
-        src="https://res.cloudinary.com/moroafriyie/video/upload/v1674137358/my%20videos/volticanHeaderLogoUpdated_js2cmn.mp4"
-        type="video/mp4"
-      />
-    </video>
+  <section class="h-intro-page-height w-full relative">
     <div
-      class="absolute px-5 sm:px-16 bg-black/30 flex justify-center items-center gap-10 text-white top-0 bottom-0 right-0 left-0 h-full w-full"
+      class="bg-white h-intro-page-height pt-2 flex justify-center items-center gap-10 text-white top-0 bottom-0 right-0 left-0 w-full"
     >
-      <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-        class=""
-      >
-        <div class="carousel-container">
-          <div
+      <div class="carousel-container">
+        <!-- <div
             *ngFor="let item of headerInfo; let i = index"
             class="fade"
             [ngClass]="selectedIndex === i ? 'item-active' : 'header-item'"
@@ -47,47 +21,20 @@
             >
               {{ item.info }}
             </p>
-          </div>
-        </div>
-        <div class="flex items-center justify-center">
+          </div> -->
+        <carousel [slides]="slides" [animationType]="animationType"></carousel>
+      </div>
+      <!-- <div class="flex items-center justify-center">
           <button
             [routerLink]="headerInfo[selectedIndex].link"
             class="px-12 self-center w-max py-3 border mx-auto sm:mx-0 border-white"
           >
             Our Services
           </button>
-        </div>
-      </div>
+        </div> -->
     </div>
-    <!-- <div
-      class="content h-[8rem] sm:h-auto p-4 text-white absolute bottom-0 w-full bg-black/60 sm:py-8 sm:px-10"
-    >
-      <h1 class="text-mobileSubText sm:text-subText capitalize pl-4">
-        Our Technology partners
-      </h1>
-      <img
-        src="https://visualbi.com/wp-content/uploads/visualbi-technology-partners.svg"
-        alt="Visual BI Technology Partners"
-        title="Visual BI Technology Partners"
-        height="auto"
-        width="auto"
-      />
-    </div> -->
   </section>
-  <div
-    class="content h-[8rem] sm:h-auto p-4 text-white w-full bg-black sm:py-8 sm:px-10"
-  >
-    <h1 class="text-mobileSubText sm:text-subText capitalize pl-4">
-      Our Technology partners
-    </h1>
-    <img
-      src="https://visualbi.com/wp-content/uploads/visualbi-technology-partners.svg"
-      alt="Visual BI Technology Partners"
-      title="Visual BI Technology Partners"
-      height="auto"
-      width="auto"
-    />
-  </div>
+
   <!--End Intro Section-->
   <!--Begin section 2-->
   <section

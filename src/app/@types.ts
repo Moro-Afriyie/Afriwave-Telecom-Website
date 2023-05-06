@@ -7,3 +7,9 @@ export interface Job {
   minimunClearanceRequired: string;
   jobDescription: string;
 }
+export interface Slide {
+  title: string;
+  imageUrl: string;
+  info: string;
+  link: string;
+}
