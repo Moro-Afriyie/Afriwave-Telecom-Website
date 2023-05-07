@@ -1,155 +1,152 @@
 <nav
-  class="w-full fixed top-0 bg-white z-30 shadow-xl px-4 xl:px-10 2xl:px-32 py-6 sm:py-2 flex items-center justify-between min-h-[3.5rem] 2xl:min-h-[5rem]"
+  class="w-full fixed top-0 bg-white z-30 shadow-xl px-4 xl:px-10 2xl:px-32 py-6 sm:py-2 min-h-[3.5rem] 2xl:min-h-[5rem]"
 >
-  <div
-    class="logo h-[2.5rem] w-[8rem] cursor-pointer sm:w-[15.5rem] sm:h-[4.6rem]"
-    routerLink="/"
-  >
-    <img
-      src="../../../assets/afriwave123.png"
-      class="w-full h-full object-contain"
-      alt="logo"
-    />
-  </div>
-
-  <button
-    class="rounded-lg tablet:hidden focus:outline-none focus:shadow-outline"
-    (click)="onToggleMenu()"
-  >
-    <svg fill="#0967c8" viewBox="0 0 20 20" class="w-8 h-8">
-      <path
-        x-show="!open"
-        fill-rule="evenodd"
-        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
-  </button>
-  <!--nav links-->
-  <ul
-    class="hidden nav_links tablet:flex font-normal text-base gap-8 items-center"
-  >
-    <li
+  <div class="max-w-[80rem] mx-auto flex items-center justify-between">
+    <div
+      class="logo h-[2.5rem] w-[8rem] cursor-pointer sm:w-[15.5rem] sm:h-[4.6rem]"
       routerLink="/"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      class="cursor-pointer hover:font-bold"
     >
-      <a>Home</a>
-    </li>
-    <li class="group hover:font-bold cursor-pointer relative">
-      <p class="flex gap-3 items-center">
-        About us <span class="iconify" data-icon="ep:arrow-down-bold"></span>
-      </p>
-      <div
-        id="dropdown"
-        class="-left-10 hidden absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
-      >
-        <ul
-          class="py-1 text-base font-normal"
-          aria-labelledby="dropdownDefault"
-        >
-          <li
-            routerLink="/about/voltican-edge"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100">History</a>
-          </li>
-          <li routerLink="/about/clientele" routerLinkActive="dropdown-active">
-            <a class="block py-2 px-4 hover:bg-gray-100">Management Team</a>
-          </li>
-          <li
-            routerLink="/about/our-experts"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100"
-              >Vision, Mission & Values</a
-            >
-          </li>
-          <li
-            routerLink="/about/our-experts"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100"
-              >Clients, Partners & Authority</a
-            >
-          </li>
-        </ul>
-      </div>
-    </li>
-    <li class="group cursor-pointer hover:font-bold relative">
-      <p class="flex gap-3 items-center">
-        Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
-      </p>
+      <img
+        src="../../../assets/afriwave123.png"
+        class="w-full h-full object-contain"
+        alt="logo"
+      />
+    </div>
 
-      <div
-        id="dropdown"
-        class="-left-10 hidden absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+    <button
+      class="rounded-lg tablet:hidden focus:outline-none focus:shadow-outline"
+      (click)="onToggleMenu()"
+    >
+      <svg fill="#0967c8" viewBox="0 0 20 20" class="w-8 h-8">
+        <path
+          x-show="!open"
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <!--nav links-->
+    <ul
+      class="hidden nav_links tablet:flex font-normal text-base gap-8 items-center"
+    >
+      <li
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="cursor-pointer hover:font-bold"
       >
-        <ul
-          class="py-1 text-base font-normal"
-          aria-labelledby="dropdownDefault"
+        <a>Home</a>
+      </li>
+      <li class="group hover:font-bold cursor-pointer relative">
+        <p class="flex gap-3 items-center">
+          About us <span class="iconify" data-icon="ep:arrow-down-bold"></span>
+        </p>
+        <div
+          id="dropdown"
+          class="-left-10 hidden absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
         >
-          <li
-            routerLink="/services/data-analytics"
-            routerLinkActive="dropdown-active"
+          <ul
+            class="py-1 text-base font-normal"
+            aria-labelledby="dropdownDefault"
           >
-            <a class="block py-2 px-4 hover:bg-gray-100"
-              >Data Analytics &amp; Modern BI</a
+            <li routerLink="/about/history" routerLinkActive="dropdown-active">
+              <a class="block py-2 px-4 hover:bg-gray-100">History</a>
+            </li>
+            <li
+              routerLink="/about/management-team"
+              routerLinkActive="dropdown-active"
             >
-          </li>
-          <li
-            routerLink="/services/big-data-and-engineering"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100"
-              >Big Data &amp; Engineering</a
-            >
-          </li>
-          <li
-            routerLink="/services/strategy-and-architecture"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100"
-              >Strategy &amp; Architecture</a
-            >
-          </li>
-          <li
-            routerLink="/services/data-science"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100">Data Science/AI/ML</a>
-          </li>
-          <li
-            routerLink="/services/other-services"
-            routerLinkActive="dropdown-active"
-          >
-            <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
-          </li>
-        </ul>
-      </div>
-    </li>
+              <a class="block py-2 px-4 hover:bg-gray-100">Management Team</a>
+            </li>
+            <li routerLink="/about/vision" routerLinkActive="dropdown-active">
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Vision, Mission & Values</a
+              >
+            </li>
+            <li routerLink="/about/clients" routerLinkActive="dropdown-active">
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Clients, Partners & Authority</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="group cursor-pointer hover:font-bold relative">
+        <p class="flex gap-3 items-center">
+          Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
+        </p>
 
-    <!-- <li
+        <div
+          id="dropdown"
+          class="-left-10 hidden absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+        >
+          <ul
+            class="py-1 text-base font-normal"
+            aria-labelledby="dropdownDefault"
+          >
+            <li
+              routerLink="/services/data-analytics"
+              routerLinkActive="dropdown-active"
+            >
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Data Analytics &amp; Modern BI</a
+              >
+            </li>
+            <li
+              routerLink="/services/big-data-and-engineering"
+              routerLinkActive="dropdown-active"
+            >
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Big Data &amp; Engineering</a
+              >
+            </li>
+            <li
+              routerLink="/services/strategy-and-architecture"
+              routerLinkActive="dropdown-active"
+            >
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Strategy &amp; Architecture</a
+              >
+            </li>
+            <li
+              routerLink="/services/data-science"
+              routerLinkActive="dropdown-active"
+            >
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Data Science/AI/ML</a
+              >
+            </li>
+            <li
+              routerLink="/services/other-services"
+              routerLinkActive="dropdown-active"
+            >
+              <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- <li
       routerLink="/careers"
       routerLinkActive="active"
       class="hover:font-bold cursor-pointer"
     >
       <a>Careers</a>
     </li> -->
-    <li
-      class="hover:font-bold cursor-pointer"
-      routerLink="/contact-us"
-      routerLinkActive="active"
-    >
-      <a>Contact Us</a>
-    </li>
-    <li class="hover:font-bold cursor-pointer" routerLinkActive="active">
-      <a>Blog</a>
-    </li>
-  </ul>
-  <!--End nav links-->
-  <!-- <div class="flex gap-8  items-center">
+      <li
+        class="hover:font-bold cursor-pointer"
+        routerLink="/contact-us"
+        routerLinkActive="active"
+      >
+        <a>Contact Us</a>
+      </li>
+      <li class="hover:font-bold cursor-pointer" routerLinkActive="active">
+        <a>Blog</a>
+      </li>
+    </ul>
+    <!--End nav links-->
+    <!-- <div class="flex gap-8  items-center">
     <button
       class="text-xl 2xl:text-[1.5rem] 2xl:h-[3.75rem] h-[2.75rem] font-bold px-8 border-2 border-primary"
     >
@@ -160,6 +157,7 @@
       data-icon="fa-solid:search"
     ></span>
   </div> -->
+  </div>
 </nav>
 <div
   class="z-50 tablet:hidden fixed top-0 left-0 right-0 bottom-0 h-full w-full bg-black/60"
@@ -206,21 +204,21 @@
               aria-labelledby="dropdownDefault"
             >
               <li
-                routerLink="/about/voltican-edge"
+                routerLink="/about/history"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100">History</a>
               </li>
               <li
-                routerLink="/about/clientele"
+                routerLink="/about/management-team"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100">Management Team</a>
               </li>
               <li
-                routerLink="/about/clientele"
+                routerLink="/about/vision"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
@@ -229,7 +227,7 @@
                 >
               </li>
               <li
-                routerLink="/about/our-experts"
+                routerLink="about/clients"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >

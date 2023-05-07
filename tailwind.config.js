@@ -29,6 +29,7 @@ module.exports = {
         "border-gray": "#CDCBCF",
         overlay: "rgba(0, 0, 0, 0.6)",
         modalBackground: "rgba(0, 0, 0, 0.89)",
+        "text-heading": "#183b84",
       },
       gridTemplateColumns: {
         "expert-cols": "repeat(auto-fit,minmax(250px,1fr))",

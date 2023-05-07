@@ -13,8 +13,6 @@ import { CarrersComponent } from './pages/carrers/carrers.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
-import { VolticanEdgeComponent } from './pages/about-us/voltican-edge/voltican-edge.component';
-import { ClienteleComponent } from './pages/about-us/clientele/clientele.component';
 import { DataAnalyticsComponent } from './pages/services/data-analytics/data-analytics.component';
 import { BigDataComponent } from './pages/services/big-data/big-data.component';
 import { StrategyComponent } from './pages/services/strategy/strategy.component';
@@ -30,6 +28,10 @@ import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.
 import { ApplyNowComponent } from './pages/carrers/apply-now/apply-now.component';
 import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { HistoryComponent } from './pages/about-us/history/history.component';
+import { ManagementTeamComponent } from './pages/about-us/management-team/management-team.component';
+import { VisionComponent } from './pages/about-us/vision/vision.component';
+import { ClientsComponent } from './pages/about-us/clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +45,6 @@ import { LoaderComponent } from './components/loader/loader.component';
     ContactUsComponent,
     CertificationsComponent,
     OurExpertsComponent,
-    VolticanEdgeComponent,
-    ClienteleComponent,
     DataAnalyticsComponent,
     BigDataComponent,
     StrategyComponent,
@@ -54,6 +54,10 @@ import { LoaderComponent } from './components/loader/loader.component';
     ApplyNowComponent,
     AllJobsComponent,
     LoaderComponent,
+    HistoryComponent,
+    ManagementTeamComponent,
+    VisionComponent,
+    ClientsComponent,
   ],
   imports: [
     //CarouselModule,

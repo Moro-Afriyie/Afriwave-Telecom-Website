@@ -7,22 +7,26 @@ import { BigDataComponent } from './pages/services/big-data/big-data.component';
 import { DataAnalyticsComponent } from './pages/services/data-analytics/data-analytics.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CarrersComponent } from './pages/carrers/carrers.component';
-import { ClienteleComponent } from './pages/about-us/clientele/clientele.component';
 import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
-import { VolticanEdgeComponent } from './pages/about-us/voltican-edge/voltican-edge.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StrategyComponent } from './pages/services/strategy/strategy.component';
 import { ApplyNowComponent } from './pages/carrers/apply-now/apply-now.component';
+import { HistoryComponent } from './pages/about-us/history/history.component';
+import { VisionComponent } from './pages/about-us/vision/vision.component';
+import { ClientsComponent } from './pages/about-us/clients/clients.component';
 
 const routes: Routes = [
-  {
-    path: 'about/voltican-edge',
-    component: VolticanEdgeComponent,
-  },
-  { path: 'about/clientele', component: ClienteleComponent },
-  // { path: 'about/our-experts', component: OurExpertsComponent },
+  // {
+  //   path: 'about/voltican-edge',
+  //   component: VolticanEdgeComponent,
+  // },
+  // { path: 'about/clientele', component: ClienteleComponent },
+  { path: 'about/history', component: HistoryComponent },
+  { path: 'about/management-team', component: OurExpertsComponent },
+  { path: 'about/vision', component: VisionComponent },
+  { path: 'about/clients', component: ClientsComponent },
   {
     path: 'careers',
     component: CarrersComponent,

@@ -2,50 +2,10 @@
   <app-navbar></app-navbar>
   <div class="mt-20">
     <router-outlet></router-outlet>
-    <!--Begin Seciton 3-->
-    <!-- <section
-    style="
-      background-image: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.6)
-        ),
-        url('../../../assets/CLientsLarge.jpeg');
-    "
-    data-aos="fade-up"
-    data-aos-delay="400"
-    class="w-full text-white mix-blend-normal bg-black/60 text-center mt-16 bg-no-repeat bg-cover bg-center gap-8 flex flex-col items-center justify-center h-full min-h-[40rem]"
-  >
-    <h1
-      class="text-mobileHeading p-2 sm:text-heading font-bold"
-      data-aos="fade-left"
-      data-aos-delay="300"
-    >
-      We specialize in aligning your strategy and technology needs to your
-      business strategy.
-    </h1>
-    <p
-      class="max-w-[49rem] w-full text-mobileSubText sm:text-subText"
-      data-aos="fade-right"
-      data-aos-delay="300"
-    >
-      Our reputation is driven by a strong conviction that a successful business
-      investment requires an attention to detail to unlock value for any
-      investment.
-    </p>
-    <button
-      class="px-10 mt-6 w-max py-3 bg-primary text-xl text-white"
-      data-aos="fade-up"
-      data-aos-delay="300"
-      routerLink="/contact-us"
-    >
-      Contact us
-    </button>
-  </section> -->
-    <!--End Seciton 3-->
 
     <!--Begin News letter Section-->
     <section
+      *ngIf="!isClientRoute"
       class="min-h-[18.8rem] px-6 sm:px-10 py-6 tablet:py-0 flex flex-col tablet:flex-row gap-10 items-center justify-center bg-primary"
     >
       <div class="text-white">
@@ -78,12 +38,12 @@
 
     <!--Begin Trusted companies-->
     <section
-      class="max-w-[80rem] px-6 py-4 sm:px-10 sm:py-10 mx-auto mt-20 w-full"
+      class="max-w-[80rem] px-6 py-4 sm:px-10 sm:py-10 mx-auto mt-10 w-full"
     >
       <h1
-        class="text-[1.5rem] sm:text-[1.75rem] my-4 text-[#010101] font-bold text-center"
+        class="text-mobileHeading sm:text-heading text-text-heading my-4 capitalize font-bold text-center"
       >
-        Our Trusted Company
+        Clients, Partners & Authority
       </h1>
       <h2
         class="text-center text-subText mb-4 sm:text-mobileHeading text-[#010101]"
@@ -99,15 +59,73 @@
         have developed long relationships with our clients based on mutual
         trust, respect and high-value, durable results.
       </p>
-      <div class="my-16 w-full flex justify-between gap-10">
-        <figure>
-          <div class="wdcl-overlay" data-icon=""></div>
-          <img
-            class="wdcl-main-img"
-            src="../assets/partnersandclients Large.jpeg"
-            alt=""
-          />
-        </figure>
+      <div class="my-8 grid-cleints-cols-minmax max-w-[80rem] w-full">
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/CSquared.png"
+          alt="csquared logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Mtn Logo.png"
+          alt="mtn logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Vodafone Logo.png"
+          alt="vodafone logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/AirtelTigo.jpg"
+          alt="airtel tigo logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/DolphinNet.png"
+          alt="dolphinet logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Glo.jpg"
+          alt="glo logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Huawei.jpg"
+          alt="Huawei logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Ivoco.jpg"
+          alt="Ivoco logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/MoC logo.jpg"
+          alt="Moc logo"
+        />
+
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Nita.jpg"
+          alt="Nita logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Onix Logo.jpg"
+          alt="onix logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Smart Africa Logo.png"
+          alt="smart africa logo"
+        />
+        <img
+          class="h-[10rem]"
+          src="../assets/partners/Ultranet.png"
+          alt="ultranet logo"
+        />
       </div>
     </section>
     <app-footer></app-footer>
