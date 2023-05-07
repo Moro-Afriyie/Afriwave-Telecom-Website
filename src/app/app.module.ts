@@ -29,7 +29,6 @@ import { ApplyNowComponent } from './pages/carrers/apply-now/apply-now.component
 import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { HistoryComponent } from './pages/about-us/history/history.component';
-import { ManagementTeamComponent } from './pages/about-us/management-team/management-team.component';
 import { VisionComponent } from './pages/about-us/vision/vision.component';
 import { ClientsComponent } from './pages/about-us/clients/clients.component';
 
@@ -55,7 +54,6 @@ import { ClientsComponent } from './pages/about-us/clients/clients.component';
     AllJobsComponent,
     LoaderComponent,
     HistoryComponent,
-    ManagementTeamComponent,
     VisionComponent,
     ClientsComponent,
   ],
