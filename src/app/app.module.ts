@@ -11,7 +11,6 @@ import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CarrersComponent } from './pages/carrers/carrers.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
-import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
 //import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -42,7 +41,6 @@ import { DataCentersComponent } from './pages/services/data-centers/data-centers
     AboutUsComponent,
     CarrersComponent,
     ContactUsComponent,
-    CertificationsComponent,
     OurExpertsComponent,
     ViewDetailsComponent,
     ApplyNowComponent,

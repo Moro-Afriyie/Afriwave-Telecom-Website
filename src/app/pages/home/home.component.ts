@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
       title: 'Traffic Monitoring',
       info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
       imageUrl:
-        'https://e0.pxfuel.com/wallpapers/681/276/desktop-wallpaper-able-avgeek-background-for-your-next-video-call-air-traffic-control.jpg',
+        'https://res.cloudinary.com/moroafriyie/image/upload/v1683477445/my%20uploads/ssh2xnsjzq6l8zqxjwhf.jpg',
       link: '',
     },
     {

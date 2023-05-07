@@ -1,6 +1,5 @@
 import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
 import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.component';
-import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CarrersComponent } from './pages/carrers/carrers.component';
 import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
@@ -50,7 +49,6 @@ const routes: Routes = [
     component: TelecomunicationsNetworkComponent,
   },
   { path: 'services/data-centers', component: DataCentersComponent },
-  { path: 'certifications', component: CertificationsComponent },
   { path: '', component: HomeComponent, pathMatch: 'full' },
 ];
 
