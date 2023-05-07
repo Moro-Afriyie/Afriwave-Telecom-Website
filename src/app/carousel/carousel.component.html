@@ -39,10 +39,18 @@
   </ng-container>
 
   <!-- controls -->
-  <button class="control z-10 prev cursor-pointer" (click)="onPreviousClick()">
+  <!-- <button class="control z-10 prev cursor-pointer" (click)="onPreviousClick()">
     <span class="arrow left"></span>
   </button>
   <button class="control z-10 next cursor-pointer" (click)="onNextClick()">
     <span class="arrow right"></span>
-  </button>
+  </button> -->
+  <div class="dots">
+    <span
+      class="dot"
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === currentSlide"
+      (click)="onSlideClick(i)"
+    ></span>
+  </div>
 </div>
