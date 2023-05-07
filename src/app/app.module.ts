@@ -13,11 +13,6 @@ import { CarrersComponent } from './pages/carrers/carrers.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
-import { DataAnalyticsComponent } from './pages/services/data-analytics/data-analytics.component';
-import { BigDataComponent } from './pages/services/big-data/big-data.component';
-import { StrategyComponent } from './pages/services/strategy/strategy.component';
-import { DataScienceComponent } from './pages/services/data-science/data-science.component';
-import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
 //import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
@@ -31,6 +26,11 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { HistoryComponent } from './pages/about-us/history/history.component';
 import { VisionComponent } from './pages/about-us/vision/vision.component';
 import { ClientsComponent } from './pages/about-us/clients/clients.component';
+import { BlogListComponent } from './pages/blog/blog-list/blog-list.component';
+import { IchComponent } from './pages/services/ich/ich.component';
+import { TrafficMonitoringComponent } from './pages/services/traffic-monitoring/traffic-monitoring.component';
+import { TelecomunicationsNetworkComponent } from './pages/services/telecomunications-network/telecomunications-network.component';
+import { DataCentersComponent } from './pages/services/data-centers/data-centers.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +44,6 @@ import { ClientsComponent } from './pages/about-us/clients/clients.component';
     ContactUsComponent,
     CertificationsComponent,
     OurExpertsComponent,
-    DataAnalyticsComponent,
-    BigDataComponent,
-    StrategyComponent,
-    DataScienceComponent,
-    OtherServicesComponent,
     ViewDetailsComponent,
     ApplyNowComponent,
     AllJobsComponent,
@@ -56,6 +51,11 @@ import { ClientsComponent } from './pages/about-us/clients/clients.component';
     HistoryComponent,
     VisionComponent,
     ClientsComponent,
+    BlogListComponent,
+    IchComponent,
+    TrafficMonitoringComponent,
+    TelecomunicationsNetworkComponent,
+    DataCentersComponent,
   ],
   imports: [
     //CarouselModule,

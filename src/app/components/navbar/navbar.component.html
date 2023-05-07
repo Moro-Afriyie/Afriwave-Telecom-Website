@@ -85,43 +85,32 @@
             class="py-1 text-base font-normal"
             aria-labelledby="dropdownDefault"
           >
-            <li
-              routerLink="/services/data-analytics"
-              routerLinkActive="dropdown-active"
-            >
+            <li routerLink="/services/ich" routerLinkActive="dropdown-active">
               <a class="block py-2 px-4 hover:bg-gray-100"
-                >Data Analytics &amp; Modern BI</a
+                >Interconnect Clearing House (ICH)</a
               >
             </li>
             <li
-              routerLink="/services/big-data-and-engineering"
+              routerLink="/services/traffic-monitoring"
               routerLinkActive="dropdown-active"
             >
               <a class="block py-2 px-4 hover:bg-gray-100"
-                >Big Data &amp; Engineering</a
+                >Traffic Monitoring</a
               >
             </li>
             <li
-              routerLink="/services/strategy-and-architecture"
+              routerLink="/services/telecomunications-network"
               routerLinkActive="dropdown-active"
             >
               <a class="block py-2 px-4 hover:bg-gray-100"
-                >Strategy &amp; Architecture</a
+                >Telecomunications Network</a
               >
             </li>
             <li
-              routerLink="/services/data-science"
+              routerLink="/services/data-centers"
               routerLinkActive="dropdown-active"
             >
-              <a class="block py-2 px-4 hover:bg-gray-100"
-                >Data Science/AI/ML</a
-              >
-            </li>
-            <li
-              routerLink="/services/other-services"
-              routerLinkActive="dropdown-active"
-            >
-              <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
+              <a class="block py-2 px-4 hover:bg-gray-100">Data Centers</a>
             </li>
           </ul>
         </div>
@@ -141,22 +130,15 @@
       >
         <a>Contact Us</a>
       </li>
-      <li class="hover:font-bold cursor-pointer" routerLinkActive="active">
-        <a>Blog</a>
+      <li
+        routerLink="/blogs"
+        class="hover:font-bold cursor-pointer"
+        routerLinkActive="active"
+      >
+        <a>Blogs</a>
       </li>
     </ul>
     <!--End nav links-->
-    <!-- <div class="flex gap-8  items-center">
-    <button
-      class="text-xl 2xl:text-[1.5rem] 2xl:h-[3.75rem] h-[2.75rem] font-bold px-8 border-2 border-primary"
-    >
-      Contact Us
-    </button>
-    <span
-      class="iconify text-3xl cursor-pointer"
-      data-icon="fa-solid:search"
-    ></span>
-  </div> -->
   </div>
 </nav>
 <div
@@ -249,47 +231,38 @@
               aria-labelledby="dropdownDefault"
             >
               <li
-                routerLink="/services/data-analytics"
+                routerLink="/services/ich"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Data Analytics &amp; Modern BI</a
+                  >Interconnect Clearing House (ICH)</a
                 >
               </li>
               <li
-                routerLink="/services/big-data-and-engineering"
+                routerLink="/services/traffic-monitoring"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Big Data &amp; Engineering</a
+                  >Traffic Monitoring</a
                 >
               </li>
               <li
-                routerLink="/services/strategy-and-architecture"
+                routerLink="/services/telecomunications-network"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Strategy &amp; Architecture</a
+                  >Telecommunications Network</a
                 >
               </li>
               <li
-                routerLink="/services/data-science"
+                routerLink="/services/data-centers"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
-                <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Data Science/AI/ML</a
-                >
-              </li>
-              <li
-                routerLink="/services/other-services"
-                routerLinkActive="dropdown-active"
-                (click)="onCloseDropdownMenu()"
-              >
-                <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
+                <a class="block py-2 px-4 hover:bg-gray-100">Data Centers</a>
               </li>
             </ul>
           </div>
@@ -313,10 +286,11 @@
         </li>
         <li
           class="hover:font-bold cursor-pointer"
+          routerLink="/blogs"
           routerLinkActive="active"
           (click)="onCloseDropdownMenu()"
         >
-          <a>Blog</a>
+          <a>Blogs</a>
         </li>
       </ul>
     </div>
