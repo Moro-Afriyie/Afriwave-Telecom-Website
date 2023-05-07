@@ -1,7 +1,7 @@
 <footer>
   <div class="foot1">
     <div class="foot2">
-      <img src="../../../assets/afriwavew.png" class="logo" />
+      <img routerLink="/" src="../../../assets/afriwavew.png" class="logo" />
       <h2>Interconnect Clearing House (ICH)</h2>
       <p>Traffic Monitoring</p>
       <p>Data Center Sale</p>
@@ -29,16 +29,24 @@
         <div class="underline"><span></span></div>
       </h3>
       <ul>
-        <li><a>Home</a></li>
-        <li><a>About Us</a></li>
-        <li><a>Services</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+        <li class="cursor-pointer" routerLink="/"><a>Home</a></li>
+        <li class="cursor-pointer" routerLink="/about/history">
+          <a>About Us</a>
+        </li>
+        <li class="cursor-pointer" routerLink="/services/ich">
+          <a>Services</a>
+        </li>
+        <li class="cursor-pointer" routerLink="/contact-us"><a>Blogs</a></li>
+        <li class="cursor-pointer" routerLink="/blogs"><a>Contact Us</a></li>
       </ul>
     </div>
     <div class="foot2">
       <div class="social-icons flex gap-2">
-        <a href=" https://www.facebook.com/afriwavetelecomgh">
+        <a
+          href=" https://www.facebook.com/afriwavetelecomgh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -54,6 +62,8 @@
 
         <a
           href="https://www.linkedin.com/company/10802666?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityld%3A10802666%2Cidx%3A1-1-1%2Ctarld%3A1469702723359%2Ctas%3Aafriwave%20"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

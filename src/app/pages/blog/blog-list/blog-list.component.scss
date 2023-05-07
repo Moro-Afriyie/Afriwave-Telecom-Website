@@ -6,9 +6,10 @@
 }
 
 .blog-content {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  padding: 60px 0;
+  padding: 60px 1rem;
+  max-width: 80rem;
 }
 
 .blog-left {
@@ -65,6 +66,9 @@
   }
   .footer {
     margin-top: 4px;
+  }
+  .row {
+    flex-direction: column;
   }
 }
 
