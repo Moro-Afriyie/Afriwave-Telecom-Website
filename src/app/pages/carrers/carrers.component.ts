@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -6,10 +6,12 @@ import * as AOS from 'aos';
   templateUrl: './carrers.component.html',
   styleUrls: ['./carrers.component.scss'],
 })
-export class CarrersComponent implements OnInit {
+export class CarrersComponent implements OnInit, AfterViewInit {
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
     AOS.init();
   }
 }

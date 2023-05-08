@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import * as AOS from 'aos';
 import { gsap, Expo } from 'gsap';
@@ -8,7 +14,7 @@ import { gsap, Expo } from 'gsap';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'voltican';
   isClientRoute = false;
   @ViewChild('overlayRef') overlayRef!: ElementRef;
@@ -34,6 +40,7 @@ export class AppComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
+    AOS.init();
     this.gsapContext = gsap.timeline();
     this.gsapContext
       .to(this.overlayRef.nativeElement.querySelector('h1'), {

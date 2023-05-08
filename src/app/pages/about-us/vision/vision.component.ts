@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -6,10 +6,14 @@ import * as AOS from 'aos';
   templateUrl: './vision.component.html',
   styleUrls: ['./vision.component.scss'],
 })
-export class VisionComponent implements OnInit {
+export class VisionComponent implements OnInit, AfterViewInit {
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
     AOS.init();
   }
 }

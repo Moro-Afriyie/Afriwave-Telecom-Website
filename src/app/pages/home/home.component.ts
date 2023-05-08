@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import * as AOS from 'aos';
 import { Slide } from 'src/app/@types';
 import { AnimationType } from 'src/app/carousel/carousel.animations';
@@ -9,7 +9,7 @@ import { CarouselComponent } from 'src/app/carousel/carousel.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild(CarouselComponent) carousel: CarouselComponent =
     {} as CarouselComponent;
 
@@ -67,7 +67,6 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    AOS.init();
     // autoslide items
     setInterval(() => {
       this.carousel.onNextClick();
@@ -79,5 +78,9 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.carousel.onNextClick();
     });
+  }
+
+  ngAfterViewInit(): void {
+    AOS.init();
   }
 }
