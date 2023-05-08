@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
       .to(
         this.overlayRef.nativeElement,
         {
-          top: '-100%',
+          top: '-100vh',
           duration: 2,
           ease: Expo.easeInOut,
         },
