@@ -67,6 +67,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor() {}
 
   ngOnInit(): void {
+    AOS.init();
     // autoslide items
     setInterval(() => {
       this.carousel.onNextClick();
@@ -81,6 +82,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    AOS.init();
+    // AOS.init();
   }
 }

@@ -29,6 +29,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    AOS.init();
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.router.events.subscribe((event) => {
@@ -40,7 +41,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    AOS.init();
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
     this.gsapContext = gsap.timeline();
     this.gsapContext
       .to(this.overlayRef.nativeElement.querySelector('h1'), {
