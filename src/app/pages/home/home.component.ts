@@ -41,14 +41,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
       link: '',
     },
     {
-      title: 'Traffic Monitoring',
+      title: 'Traffic Routing',
       info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
       imageUrl:
         'https://res.cloudinary.com/moroafriyie/image/upload/v1683477445/my%20uploads/ssh2xnsjzq6l8zqxjwhf.jpg',
       link: '',
     },
     {
-      title: 'Telecommunication Networks',
+      title: 'SMS Service',
       info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
       imageUrl: 'https://www.afriwavetelecom.com/img/banner2.jpg',
       link: '',
@@ -83,5 +83,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     // AOS.init();
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }
 }

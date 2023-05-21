@@ -53,21 +53,29 @@
             <li routerLink="/about/history" routerLinkActive="dropdown-active">
               <a class="block py-2 px-4 hover:bg-gray-100">History</a>
             </li>
+            <li routerLink="/about/vision" routerLinkActive="dropdown-active">
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Vision, Mission & Values</a
+              >
+            </li>
             <li
               routerLink="/about/management-team"
               routerLinkActive="dropdown-active"
             >
               <a class="block py-2 px-4 hover:bg-gray-100">Management Team</a>
             </li>
-            <li routerLink="/about/vision" routerLinkActive="dropdown-active">
-              <a class="block py-2 px-4 hover:bg-gray-100"
-                >Vision, Mission & Values</a
-              >
-            </li>
-            <li routerLink="/about/clients" routerLinkActive="dropdown-active">
+
+            <!-- <li routerLink="/about/clients" routerLinkActive="dropdown-active">
               <a class="block py-2 px-4 hover:bg-gray-100"
                 >Clients & Partners</a
               >
+            </li> -->
+            <li
+              routerLink="/careers"
+              routerLinkActive="active"
+              class="hover:font-bold cursor-pointer"
+            >
+              <a>Careers</a>
             </li>
           </ul>
         </div>
@@ -91,20 +99,16 @@
               >
             </li>
             <li
-              routerLink="/services/traffic-monitoring"
+              routerLink="/services/traffic-routing"
               routerLinkActive="dropdown-active"
             >
-              <a class="block py-2 px-4 hover:bg-gray-100"
-                >Traffic Monitoring</a
-              >
+              <a class="block py-2 px-4 hover:bg-gray-100">Traffic Routing</a>
             </li>
             <li
               routerLink="/services/telecomunications-network"
               routerLinkActive="dropdown-active"
             >
-              <a class="block py-2 px-4 hover:bg-gray-100"
-                >Telecomunications Network</a
-              >
+              <a class="block py-2 px-4 hover:bg-gray-100">SMS Services</a>
             </li>
             <li
               routerLink="/services/data-centers"
@@ -117,12 +121,12 @@
       </li>
 
       <!-- <li
-      routerLink="/careers"
-      routerLinkActive="active"
-      class="hover:font-bold cursor-pointer"
-    >
-      <a>Careers</a>
-    </li> -->
+        routerLink="/careers"
+        routerLinkActive="active"
+        class="hover:font-bold cursor-pointer"
+      >
+        <a>Careers</a>
+      </li> -->
       <li
         class="hover:font-bold cursor-pointer"
         routerLink="/contact-us"
@@ -193,13 +197,6 @@
                 <a class="block py-2 px-4 hover:bg-gray-100">History</a>
               </li>
               <li
-                routerLink="/about/management-team"
-                routerLinkActive="dropdown-active"
-                (click)="onCloseDropdownMenu()"
-              >
-                <a class="block py-2 px-4 hover:bg-gray-100">Management Team</a>
-              </li>
-              <li
                 routerLink="/about/vision"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
@@ -209,6 +206,14 @@
                 >
               </li>
               <li
+                routerLink="/about/management-team"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100">Management Team</a>
+              </li>
+
+              <!-- <li
                 routerLink="about/clients"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
@@ -216,6 +221,14 @@
                 <a class="block py-2 px-4 hover:bg-gray-100"
                   >Clients & Partners</a
                 >
+              </li> -->
+              <li
+                routerLink="/careers"
+                routerLinkActive="active"
+                class="hover:font-bold cursor-pointer"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a>Careers</a>
               </li>
             </ul>
           </div>
@@ -240,22 +253,18 @@
                 >
               </li>
               <li
-                routerLink="/services/traffic-monitoring"
+                routerLink="/services/traffic-routing"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
-                <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Traffic Monitoring</a
-                >
+                <a class="block py-2 px-4 hover:bg-gray-100">Traffic Routing</a>
               </li>
               <li
                 routerLink="/services/telecomunications-network"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
-                <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Telecommunications Network</a
-                >
+                <a class="block py-2 px-4 hover:bg-gray-100">SMS Services</a>
               </li>
               <li
                 routerLink="/services/data-centers"

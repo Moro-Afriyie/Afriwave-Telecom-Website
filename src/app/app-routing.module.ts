@@ -1,3 +1,4 @@
+import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.component';
 import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
 import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
@@ -37,11 +38,12 @@ const routes: Routes = [
   },
 
   { path: 'blogs', component: BlogListComponent },
+  { path: 'blogs/:id', component: BlogDetailsComponent },
 
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'services/ich', component: IchComponent },
   {
-    path: 'services/traffic-monitoring',
+    path: 'services/traffic-routing',
     component: TrafficMonitoringComponent,
   },
   {

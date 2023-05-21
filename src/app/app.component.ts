@@ -16,7 +16,7 @@ import { gsap, Expo } from 'gsap';
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'voltican';
-  isClientRoute = false;
+  showClients = true;
   @ViewChild('overlayRef') overlayRef!: ElementRef;
   // @ViewChild('logoRef') logoRef!: ElementRef;
   // @ViewChild('navRef') navRef!: ElementRef;
@@ -35,7 +35,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Route has changed, perform actions or logic here
-        this.isClientRoute = this.router.url === '/about/clients';
+        this.showClients = this.showClients =
+          !this.router.url.includes('blog') &&
+          !this.router.url.includes('careers');
       }
     });
   }

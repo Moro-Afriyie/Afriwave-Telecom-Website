@@ -12,9 +12,9 @@
   max-width: 80rem;
 }
 
-.blog-left {
-  flex-basis: 65%;
-}
+// .blog-left {
+//   flex-basis: 65%;
+// }
 
 .blog-left h1 {
   text-align: center;
@@ -166,4 +166,22 @@
 
 .red-btn:hover {
   color: #fff;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  a {
+    margin-top: auto;
+    width: max-content;
+  }
+  img {
+    height: 17rem;
+  }
 }

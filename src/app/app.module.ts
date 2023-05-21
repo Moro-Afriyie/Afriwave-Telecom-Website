@@ -30,6 +30,8 @@ import { IchComponent } from './pages/services/ich/ich.component';
 import { TrafficMonitoringComponent } from './pages/services/traffic-monitoring/traffic-monitoring.component';
 import { TelecomunicationsNetworkComponent } from './pages/services/telecomunications-network/telecomunications-network.component';
 import { DataCentersComponent } from './pages/services/data-centers/data-centers.component';
+import { TruncatePipe } from './truncate.pipe';
+import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { DataCentersComponent } from './pages/services/data-centers/data-centers
     TrafficMonitoringComponent,
     TelecomunicationsNetworkComponent,
     DataCentersComponent,
+    TruncatePipe,
+    BlogDetailsComponent,
   ],
   imports: [
     //CarouselModule,

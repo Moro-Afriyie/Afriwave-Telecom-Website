@@ -9,7 +9,7 @@
     <router-outlet></router-outlet>
 
     <!--Begin News letter Section-->
-    <section
+    <!-- <section
       *ngIf="!isClientRoute"
       class="min-h-[18.8rem] px-6 sm:px-10 py-6 tablet:py-0 flex flex-col tablet:flex-row gap-10 items-center justify-center bg-primary"
     >
@@ -39,10 +39,11 @@
           Submit
         </button>
       </div>
-    </section>
+    </section> -->
 
     <!--Begin Trusted companies-->
     <section
+      *ngIf="showClients"
       class="max-w-[80rem] px-6 py-4 sm:px-10 sm:py-10 mx-auto mt-10 w-full"
     >
       <h1
@@ -93,9 +94,9 @@
           alt="Nita logo"
         />
         <img
-          class="h-[10rem]"
-          src="../assets/partners/MoC logo.jpg"
-          alt="Moc logo"
+          class="h-[6rem]"
+          src="../assets/partners/SmartInfraco.png"
+          alt="smart infraco logo"
         />
         <img
           class="h-[10rem]"
