@@ -25,28 +25,78 @@
   >
     <div class="max-w-[73rem] w-full">
       <div
-        class="flex flex-col flex-wrap sm:flex-row mb-20 gap-3 sm:gap-10 tablet:gap-32 w-full text-text-black"
+        class="flex flex-col flex-wrap sm:flex-row mb-20 gap-3 sm:gap-10 tablet:gap-16 w-full text-text-black"
       >
         <div class="text-mobileSubText md:text-subText">
-          <h1 class="my-2 font-bold">Address</h1>
-          <p># 10 William Tubman Road</p>
-          <p class="mb-10">North Ridge, Accra - Ghana</p>
-          <a
-            class="bg-text-heading w-max px-4 py-4 text-white text-lg font-bold"
-            href="https://www.google.com/maps/place/Afriwave+Telecom/@5.5609495,-0.2024976,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9a7830913007:0xe70cb663e96fbe49!8m2!3d5.5609495!4d-0.2024976!16s%2Fg%2F11cs228grz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get directions
-          </a>
+          <div>
+            <div class="flex group gap-4 items-center sm:items-start">
+              <a
+                href="https://www.google.com/maps/place/Afriwave+Telecom/@5.5609495,-0.2024976,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9a7830913007:0xe70cb663e96fbe49!8m2!3d5.5609495!4d-0.2024976!16s%2Fg%2F11cs228grz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-[4rem] group-hover:bg-text-heading transition-all rounded-sm bg-gray-100 h-[5rem] flex items-center justify-center sm:mt-4"
+              >
+                <span
+                  class="material-symbols-outlined group-hover:text-white text-[3rem]"
+                >
+                  location_on
+                </span>
+              </a>
+              <div>
+                <h1 class="my-2 font-bold">Address</h1>
+                <p># 10 William Tubman Road</p>
+                <p class="mb-10">North Ridge, Accra - Ghana</p>
+              </div>
+            </div>
+            <a
+              class="bg-text-heading w-max px-4 py-4 text-white text-lg font-bold"
+              href="https://www.google.com/maps/place/Afriwave+Telecom/@5.5609495,-0.2024976,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9a7830913007:0xe70cb663e96fbe49!8m2!3d5.5609495!4d-0.2024976!16s%2Fg%2F11cs228grz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get directions
+            </a>
+          </div>
         </div>
         <div class="text-mobileSubText md:text-subText">
-          <h1 class="my-2 font-bold">Phone</h1>
-          <p class="font-normal">+233 (0) 30 701 2666</p>
+          <div class="flex group gap-4 items-center">
+            <a
+              href="tel:+233307012666"
+              class="w-[4rem] group-hover:bg-text-heading transition-all rounded-sm bg-gray-100 h-[5rem] flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined group-hover:text-white text-[3rem]"
+              >
+                phone_in_talk
+              </span>
+            </a>
+            <div>
+              <h1 class="my-2 font-bold">Contact</h1>
+              <p class="font-normal">+233 (0) 30 701 2666</p>
+              <p><a>info@afriwavetelecom.com</a></p>
+            </div>
+          </div>
         </div>
+
         <div class="text-mobileSubText md:text-subText">
-          <h1 class="my-2 font-bold">Email</h1>
-          <p>info@afriwavetelecom.com</p>
+          <div class="flex group gap-4 items-center">
+            <div
+              class="w-[4rem] group-hover:bg-text-heading transition-all rounded-sm bg-gray-100 h-[5rem] flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined group-hover:text-white text-[3rem]"
+              >
+                <span class="material-symbols-outlined text-[3rem]">
+                  schedule
+                </span>
+              </span>
+            </div>
+            <div>
+              <h1 class="my-2 font-bold">Office Hours</h1>
+              <p>Monday - Friday</p>
+              <p>09:00am - 05:00pm</p>
+            </div>
+          </div>
         </div>
       </div>
       <form class="w-full tablet:px-0">
@@ -146,7 +196,7 @@
             <label
               for="message"
               class="text-mobileSubText md:text-subText text-text-gray"
-              >Enter Your Messages</label
+              >Enter Your Message</label
             >
             <div class="relative w-full">
               <textarea
