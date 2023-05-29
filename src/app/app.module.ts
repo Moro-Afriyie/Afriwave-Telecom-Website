@@ -32,6 +32,7 @@ import { TelecomunicationsNetworkComponent } from './pages/services/telecomunica
 import { DataCentersComponent } from './pages/services/data-centers/data-centers.component';
 import { TruncatePipe } from './truncate.pipe';
 import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.component';
+import { BlogService } from './blog.service';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,7 @@ import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.com
     BrowserAnimationsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
