@@ -12,6 +12,12 @@ footer {
   line-height: 20px;
 }
 
+.footer-container {
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
+}
+
 .foot3 {
   width: 100%;
   position: relative;
@@ -27,7 +33,7 @@ footer {
 }
 
 .foot1 {
-  width: 85%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;

@@ -26,13 +26,13 @@
       <div class="blog-container">
         <div class="blog-card" *ngFor="let blog of blogList">
           <img src="{{ blog.imageUrl }}" />
-          <h2>
+          <h2 class="capitalize">
             {{ blog.title }}
           </h2>
           <p>
             {{ blog.blogContent | truncate : 400 }}
           </p>
-          <br />
+          <br class="hidden sm:block" />
 
           <a href="afriwave-smartafk1.html" class="hero-btn red-btn"
             >READ MORE</a
