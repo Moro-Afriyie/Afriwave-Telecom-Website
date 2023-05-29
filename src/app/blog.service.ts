@@ -49,7 +49,7 @@ Afriwave has since going live in May 2016, put in place practical steps for a su
     {
       id: 3,
       title: `Afriwave Telecom, A licensed Ghanaian Interconnect Clearinghouse (ICH) operator joins the Smart Africa Alliance.`,
-      imageUrl: '../../../../assets/smartAfrk.jpg',
+      imageUrl: '../../../../assets/smartafrica.jpg',
       blogContent: `Smart Africa has announced that Afriwave Telecom has become the latest private sector member of the Smart Africa Alliance. The organisations will work together towards the vision of transforming Africa into a single digital market. Smart Africa is an alliance of 32 African countries, international organisations and global private sector players tasked with defining Africa’s digital agenda.
 The water facility which was constructed by Millennium International Development Agency (MiDA) has been abandoned by the community for a decade due to the salty taste of the water which was sourced from borehole water. Thanks to Afriwave Telecom, the chiefs, and people of Ekye Amanfrom can now boast of having access to potable water.
 
@@ -93,6 +93,23 @@ BENEFITS OF ICH
 ICT is an enabler for the economy. At Afriwave, we are working through the ICH platform to provide a gateway into the telecom's ecosystem. Provision of financial clearing house services to facilitate easier settlement of interconnect fees amongst MNOs and potential MNOs and VAS providers. Better utilization of Interconnect links. Billing and Mediation services. Integrating other sectors of the economy into the telecom ecosystem will enhance transaction speed and therefore stimulate economic growth. Simple, cost-effective, and reliable Points of Interconnection (POIs). Routing and Reconciliation of Interconnect Traffic between Service Providers: Voice, Short Messaging Service (SMS)
  `,
       link: '',
+      createdAt: new Date('Dec 5, 2022'),
+      location: 'Accra',
+    },
+    {
+      id: 5,
+      title: `Afriwave's founder david opoku recieves top 20 tech leaders award`,
+      imageUrl: 'https://www.afriwavetelecom.com/img/David.JPG',
+      blogContent: `Afriwave Telecom and its founder Mr David Poku has been awarded at the 12th Ghana Information Technology and Telecom Awards (GITTA) in Accra. While the company was named "Interconnect Clearing Provider of the Year", its founder, Mr David Poku was honored as one of the "Top 20 Telecom Personalities" for promoting excellence in the country.
+Mr Poku has strong background in management and telecommunications and has been involved in the telecom industry for the last 25 years helping Afriwave diversify into a giant telecom industry. He maintains and develops Afriwave's vision, oversees policy implementation, seeks to protect Afriwave's image and provides leadership to ensure that it achieves its strategic goals.
+
+The ICH currently carries all interconnect voice traffic in Ghana and is fully connected to all the country's telecom providers, including AirtelTigo, MTN and Vodafone.
+Speaking on the award, Mr David Poku said he was pleased Afriwave Telecom was acknowledged for the service it was offering in the country's telecom ecosystem and was especially glad that Afriwave managed to clean Ghana's telecom sector through interconnection. Mr Poku congratulated all of award recipients and urged them to continue working to develop Ghana's telecom sector adding that as a fully Ghanaian company Afriwave Telecom would work harder to enhance interconnection throughout Ghana and beyond.
+
+The theme of this year's GITTA was "Celebrating and Promoting Excellence in the Tech Industry". GITTA establishes a strategic platform to honor, reward and highlight the innovative ICT initiatives advancing Ghana's private and public sectors with the aim of estabilishing a benchmark for the wave of development in the subregion
+
+ `,
+      link: 'Oct 27 2022',
       createdAt: new Date('Dec 5, 2022'),
       location: 'Accra',
     },
