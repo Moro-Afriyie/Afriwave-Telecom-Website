@@ -1,13 +1,15 @@
 <section class="h-full my-16 py-16 px-6 sm:px-20 tablet:px-0 w-full">
   <div class="max-w-[80rem] flex-col lg:flex-row flex mx-auto">
     <div
-      class="w-full lg:w-[70%] pl-10 flex flex-col pr-10 gap-10 lg:border-r lg:border-gray-200"
+      class="w-full lg:w-[70%] sm:pl-10 flex flex-col sm:pr-10 gap-10 lg:border-r lg:border-gray-200"
     >
       <div class="h-[20rem] lg:h-[35rem] w-full">
         <img src="{{ blog.imageUrl }}" alt="" srcset="" class="h-full w-full" />
       </div>
       <div class="title">
-        <h1 class="text-mobileHeading sm:text-4xl uppercase font-bold">
+        <h1
+          class="text-[1.4rem] text-center lg:text-left sm:text-4xl uppercase font-bold"
+        >
           {{ blog.title }}
         </h1>
       </div>
@@ -29,8 +31,12 @@
         </p>
       </div>
     </div>
-    <div class="w-full lg:w-[30%] mt-10 lg:mt-0 pl-10">
-      <h2 class="font-bold text-mobileHeading text-left mb-6">Recent Posts</h2>
+    <div class="w-full lg:w-[30%] mt-10 lg:mt-0 lg:pl-10">
+      <h2
+        class="font-bold text-center text-[1.4rem] sm:text-mobileHeading lg:text-left mb-6"
+      >
+        Recent Posts
+      </h2>
       <div class="flex flex-col gap-6">
         <div
           class="cursor-pointer group flex gap-2 items-start"
