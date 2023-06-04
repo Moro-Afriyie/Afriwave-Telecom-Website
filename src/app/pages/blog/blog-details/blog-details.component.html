@@ -1,4 +1,6 @@
-<section class="h-full my-16 py-16 px-6 sm:px-20 tablet:px-0 w-full">
+<section
+  class="blog-details-page h-full my-16 py-16 px-6 sm:px-20 tablet:px-0 w-full"
+>
   <div class="max-w-[80rem] flex-col lg:flex-row flex mx-auto">
     <div
       class="w-full lg:w-[70%] sm:pl-10 flex flex-col sm:pr-10 gap-10 lg:border-r lg:border-gray-200"
@@ -25,11 +27,10 @@
           <span>{{ blog.createdAt | date }}</span>
         </div>
       </div>
-      <div class="text-mobileSubText sm:text-subText">
-        <p>
-          {{ blog.blogContent }}
-        </p>
-      </div>
+      <div
+        class="text-mobileSubText sm:text-subText"
+        [innerHTML]="blog.blogContent"
+      ></div>
     </div>
     <div class="w-full lg:w-[30%] mt-10 lg:mt-0 lg:pl-10">
       <h2

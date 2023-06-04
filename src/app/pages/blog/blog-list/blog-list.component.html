@@ -35,9 +35,10 @@
           >
             {{ blog.title }}
           </h2>
-          <p class="px-4">
-            {{ blog.blogContent | truncate : 400 }}
-          </p>
+          <p
+            class="px-4"
+            [innerHTML]="blog.blogContent.substr(0, 400) + '...'"
+          ></p>
           <br class="hidden sm:block" />
 
           <a

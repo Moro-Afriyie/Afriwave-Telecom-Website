@@ -1,11 +1,12 @@
 import { BlogService } from '../../../blog.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-details',
   templateUrl: './blog-details.component.html',
   styleUrls: ['./blog-details.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class BlogDetailsComponent implements OnInit {
   constructor(
