@@ -24,17 +24,25 @@
     <div class="blog-left">
       <h1>Latest Blogs</h1>
       <div class="blog-container">
-        <div class="blog-card" *ngFor="let blog of blogList">
+        <div
+          class="blog-card rounded-md overflow-hidden"
+          *ngFor="let blog of blogList"
+        >
           <img src="{{ blog.imageUrl }}" />
-          <h2 class="capitalize">
+          <h2
+            routerLink="{{ '/blogs/' + blog.id }}"
+            class="capitalize px-4 cursor-pointer hover:underline"
+          >
             {{ blog.title }}
           </h2>
-          <p>
+          <p class="px-4">
             {{ blog.blogContent | truncate : 400 }}
           </p>
           <br class="hidden sm:block" />
 
-          <a routerLink="{{ '/blogs/' + blog.id }}" class="hero-btn red-btn"
+          <a
+            routerLink="{{ '/blogs/' + blog.id }}"
+            class="hero-btn red-btn mx-4 mb-4"
             >READ MORE</a
           >
         </div>

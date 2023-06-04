@@ -30,7 +30,6 @@
 
 .blog-left img {
   width: 100%;
-  padding-top: 10px;
 }
 
 .blog-left h2 {
@@ -74,7 +73,6 @@
 
 .blog-left p {
   color: rgb(120, 120, 120);
-  padding: 0;
   text-align: justify;
 }
 
@@ -161,7 +159,7 @@
   border: 1px solid #2f6b9c;
   background: transparent;
   color: #2f6b9c;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 }
 
 .red-btn:hover {
@@ -176,6 +174,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     @media screen and (max-width: 800px) {
       gap: 0.8rem;
       h2,
