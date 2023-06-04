@@ -16,6 +16,7 @@ import { TrafficMonitoringComponent } from './pages/services/traffic-monitoring/
 import { TelecomunicationsNetworkComponent } from './pages/services/telecomunications-network/telecomunications-network.component';
 import { DataCentersComponent } from './pages/services/data-centers/data-centers.component';
 import { BlogListComponent } from './pages/blog/blog-list/blog-list.component';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
 
 const routes: Routes = [
   // {
@@ -51,6 +52,7 @@ const routes: Routes = [
     component: TelecomunicationsNetworkComponent,
   },
   { path: 'services/data-centers', component: DataCentersComponent },
+  { path: 'privacy-policy', component: PrivacyComponent },
   { path: '', component: HomeComponent, pathMatch: 'full' },
 ];
 

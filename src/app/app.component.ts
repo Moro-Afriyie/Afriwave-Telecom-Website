@@ -38,7 +38,8 @@ export class AppComponent implements OnInit, AfterViewInit {
         this.showClients = this.showClients =
           !this.router.url.includes('blog') &&
           !this.router.url.includes('careers') &&
-          !this.router.url.includes('contact');
+          !this.router.url.includes('contact') &&
+          !this.router.url.includes('privacy');
       }
     });
   }

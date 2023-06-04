@@ -33,6 +33,7 @@ import { DataCentersComponent } from './pages/services/data-centers/data-centers
 import { TruncatePipe } from './truncate.pipe';
 import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.component';
 import { BlogService } from './blog.service';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { BlogService } from './blog.service';
     DataCentersComponent,
     TruncatePipe,
     BlogDetailsComponent,
+    PrivacyComponent,
   ],
   imports: [
     //CarouselModule,

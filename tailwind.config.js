@@ -12,7 +12,7 @@ module.exports = {
       },
       fontSize: {
         mainText: "4rem",
-        heading: "3.625rem",
+        heading: "3rem",
         subText: "1.375rem",
         buttonText: "1.375rem",
         mobileHeading: "2rem",
