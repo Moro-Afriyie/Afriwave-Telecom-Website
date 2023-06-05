@@ -7,9 +7,8 @@
           rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.6)
         ),
-        url('../../../assets/ExpertsLarge.jpeg');
+        url('../../../../assets/AfriwaveManagement/Group.JPG');
       background-size: cover;
-      background-position: center;
       background-repeat: no-repeat;
     "
     class="h-[16rem] md:h-[32rem] flex items-center justify-center w-full"
@@ -29,29 +28,41 @@
       <h1
         class="text-mobileHeading text-center xl:text-left sm:text-heading font-bold mb-8"
       >
-        These are our experts
+        Afriwave Telecom Leadership Team
       </h1>
       <p
         class="text-mobileSubText sm:text-subText mb-10 flex flex-col gap-6 text-text-gray"
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ea
-        sint eos, voluptatum veniam nisi unde quia, quod suscipit ducimus
-        mollitia nostrum odio eligendi autem officia expedita aliquam. Nesciunt,
-        architecto?
+        Afriwave’s philosophy is guided by the company’s focus on technical
+        proficiency, innovative solutions, project execution excellence and
+        integrity of service. The company has hired the services of additional
+        management staff and consultants taking into consideration backgrounds,
+        coupled with years of experience in engineering, accounting and
+        management
       </p>
       <div class="gap-6 justify-center xl:justify-start flex-wrap flex w-full">
         <div
-          *ngFor="let item of [1, 2, 3, 4, 5, 6]"
-          (click)="onShowExpert()"
-          class="relative cursor-pointer group w-full flex items-end px-4 py-8 max-w-[23.125rem] h-[23.125rem] bg-text-gray"
+          *ngFor="let member of managementTeam"
+          (click)="onShowExpert(member)"
+          class="relative cursor-pointer group w-full flex items-end px-4 py-8 max-w-[23.125rem] h-[23.125rem]"
+          style="
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url('{{ member.imageUrl }}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
         >
-          <div class="text-[#2D2323] flex flex-col gap-2 w-full text-center">
+          <div class="text-[#ffffff] flex flex-col gap-2 w-full text-center">
             <p
               class="text-base 2xl:text-lg text-center text-[1.75rem] font-bold"
             >
-              Howard Arlene
+              {{ member.name }}
             </p>
-            <p class="text-sm 2xl:text-[1.5rem]">Finance Manager</p>
+            <p class="text-sm 2xl:text-[1.5rem]">{{ member.position }}</p>
           </div>
           <div
             class="absolute p-6 flex items-center justify-center top-0 left-0 w-full h-full bg-overlay transition-all scale-0 group-hover:scale-100 ease-in-out duration-200 delay-100"
@@ -60,9 +71,9 @@
               <p
                 class="text-base 2xl:text-lg text-center text-[1.75rem] font-bold"
               >
-                Howard Arlene
+                {{ member.name }}
               </p>
-              <p class="text-sm 2xl:text-[1.5rem]">Finance Manager</p>
+              <p class="text-sm 2xl:text-[1.5rem]">{{ member.position }}</p>
             </div>
           </div>
         </div>
@@ -112,37 +123,33 @@
   <!--modal-->
   <div
     *ngIf="modalStatus"
-    (click)="onShowExpert()"
+    (click)="onShowExpert(selectedMember)"
     class="fixed overflow-auto z-40 top-0 left-0 right-0 py-10 bottom-0 w-full flex items-start justify-center h-full bg-modalBackground"
   >
     <div
       class="max-w-[80.5rem] flex flex-col sm:block p-6 sm:px-10 sm:py-10 lg:px-20 lg:py-20 w-full bg-white min-h-[44.5rem] mx-4 md:mx-10 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
     >
       <div
-        class="w-full sm:max-w-[20.6rem] float-left mr-10 mb-5 h-[20.63rem] bg-text-gray"
+        class="w-full sm:max-w-[20.6rem] float-left mr-10 mb-5 h-[20.63rem]"
+        style="
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url('{{ selectedMember.imageUrl }}');
+      background-size: cover;
+      background-repeat: no-repeat;"
       ></div>
       <p class="text-base text-text-black 2xl:text-lg text-[1.75rem] font-bold">
-        Howard Arlene
+        {{ selectedMember.name }}
       </p>
-      <p class="text-sm my-3 2xl:text-subText">Finance Manager</p>
+      <p class="text-sm my-3 2xl:text-subText">{{ selectedMember.position }}</p>
 
       <p
         class="text-text-gray leading-9 text-mobileSubText sm:text-subText 2xl:text-2xl"
       >
-        Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-        cillum dolor. Volup Nulla Lorem mollit cupidatat irure. Laborum magna
-        nulla duis ullamco cillum dolor. Voluptate exercitation incididunt
-        aliquip deserunt. tate exercitation incididunt aliquip deserunt. Nulla
-        Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
-        dolor. Voluptate exercitation incididunt aliquip deserunt. Nulla Lorem
-        mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
-        Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-        cillum dolor. Volup Nulla Lorem mollit cupidatat irure. Laborum magna
-        nulla duis ullamco cillum dolor. Voluptate exercitation incididunt
-        aliquip deserunt. tate exercitation incididunt aliquip deserunt. Nulla
-        Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
-        dolor. Voluptate exercitation incididunt aliquip deserunt. Nulla Lorem
-        mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+        {{ selectedMember.details }}
       </p>
     </div>
   </div>
