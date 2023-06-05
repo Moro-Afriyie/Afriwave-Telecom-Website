@@ -27,10 +27,7 @@
           <span>{{ blog.createdAt | date }}</span>
         </div>
       </div>
-      <div
-        class="text-mobileSubText sm:text-subText"
-        [innerHTML]="blog.blogContent"
-      ></div>
+      <div class="text-sm sm:text-sm" [innerHTML]="blog.blogContent"></div>
     </div>
     <div class="w-full lg:w-[30%] mt-10 lg:mt-0 lg:pl-10">
       <h2
