@@ -17,15 +17,16 @@ export class OurExpertsComponent implements OnInit, AfterViewInit {
       position: 'Deputy Chief Executive Officer',
       imageUrl: '../../../../assets/AfriwaveManagement/DCEO.JPG',
       details:
-        'Francis Poku serves as the Deputy CEO and is responsible for the direction and implementation of the organization’s objectives and provides leadership towards the achievement of its mission, as well as, overseeing the Administration and Business Support, Human Resources, Environment, Health and Safety functions of the Interconnect Clearing House. A co-founder of the company, Francis has seen the steady growth of the business from its humble beginnings to becoming one of the sought after companies with expertise in telecommunication equipment, supplies and service provision.',
+        'Francis Poku serves as the Deputy CEO and is responsible for the direction and implementation of the organization’s objectives and provides leadership towards the achievement of its mission, as well as, overseeing the Administration and Business Support, Human Resources, Environment, Health and Safety functions of the Interconnect Clearing House. A co-founder of the company, Francis',
+      linkedInUrl: '',
     },
     {
       id: 2,
       name: 'Henry Searyoh',
       position: 'Commercial Director',
       imageUrl: '../../../../assets/AfriwaveManagement/CD.JPG',
-      details:
-        'Henry Searyoh is the Commercial Director and is responsible for developing and implementing commercial strategies according to company goals and objectives with the aim to accelerate growth, as well as, the effective management and control of company funds and risk towards the achievement of corporate objectives. With over 25 years’ experience, he brings to the organization a wealth of experience in Finance, Financial and Management Accounting. Other areas of expertise include management and development consulting, business process reviews and policy development.',
+      details: '  ',
+      linkedInUrl: '',
     },
     {
       id: 4,
@@ -33,6 +34,7 @@ export class OurExpertsComponent implements OnInit, AfterViewInit {
       position: 'Project Director',
       imageUrl: '../../../../assets/AfriwaveManagement/PM.JPG',
       details: '',
+      linkedInUrl: '',
     },
     {
       id: 5,
@@ -40,6 +42,7 @@ export class OurExpertsComponent implements OnInit, AfterViewInit {
       position: 'Chief Finance Officer',
       imageUrl: '../../../../assets/AfriwaveManagement/CFO.JPG',
       details: '',
+      linkedInUrl: '',
     },
     {
       id: 6,
@@ -47,6 +50,7 @@ export class OurExpertsComponent implements OnInit, AfterViewInit {
       position: 'Facilities / Health & Safety Manager',
       imageUrl: '../../../../assets/AfriwaveManagement/Facilities.JPG',
       details: '',
+      linkedInUrl: '',
     },
     {
       id: 7,
@@ -54,6 +58,7 @@ export class OurExpertsComponent implements OnInit, AfterViewInit {
       position: 'Corporate Affairs Officer',
       imageUrl: '../../../../assets/AfriwaveManagement/CA.JPG',
       details: '',
+      linkedInUrl: '',
     },
   ];
 
