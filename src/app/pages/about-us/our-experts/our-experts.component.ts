@@ -33,7 +33,11 @@ export class OurExpertsComponent implements OnInit, AfterViewInit {
       name: 'Delali Blekpe',
       position: 'Project Director',
       imageUrl: '../../../../assets/AfriwaveManagement/PM.JPG',
-      details: '',
+      details: `Delali is an experienced telecom professional with (19+) years working in Tech Projects and Operations Management and highly skilled in Project Management, Network Planning/Development and Operation & Maintenance Management covering all areas of Telecoms environment spanning from Radio/Core/Transmission planning through rollout to network optimization and maintenance.
+
+Delali possesses strong leadership skills as evidenced in various capacities of leading cross-functional teams through numerous project cycles while implementing strategic solutions for business growth. He is passionate about technology; continuously driving improvements that drive value for the customer while achieving financial and operational objectives.
+
+Delali holds a Bachelor's Degree in Information & Communication Technology (ICT) from the Ghana Institute of Management and Public Administration (GIMPA) and a Higher National Diploma in Electrical/Electronic Engineering from the Takoradi Technical University.`,
       linkedInUrl: 'https://www.linkedin.com/in/delali-blekpe-4b9093b/',
     },
     {
