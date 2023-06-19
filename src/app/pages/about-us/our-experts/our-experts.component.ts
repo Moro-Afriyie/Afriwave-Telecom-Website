@@ -54,7 +54,10 @@ Delali holds a Bachelor's Degree in Information & Communication Technology (ICT)
       name: 'Ernest Poku',
       position: 'Facilities / Health & Safety Manager',
       imageUrl: '../../../../assets/AfriwaveManagement/Facilities.JPG',
-      details: '',
+      details: `Ernest Poku is the Facilities/Health & Safety manager who is responsible for ensuring the office is run efficiently to meet staff needs. His proactive approach to contract and space management is invaluable.
+      He is leader who motivates and inspires his team to do their best at work. He has a wonderful human relationship with all the staff which makes it comfortable for staff to work with him.
+      His 10 years’ experience in Health & Safety helps to maintain an incident free and an efficient working environment. His priority is always ensuring the safety and security of the employees and the company’s property.
+      `,
       linkedInUrl: 'https://www.linkedin.com/in/ernest-poku-96aa6277',
     },
     {
