@@ -45,7 +45,12 @@ Delali holds a Bachelor's Degree in Information & Communication Technology (ICT)
       name: 'Patricia Abla Quansah',
       position: 'Chief Finance Officer',
       imageUrl: '../../../../assets/AfriwaveManagement/CFO.JPG',
-      details: '',
+      details: `Patricia Abla Quansah is the Chief Financial Officer, responsible for managing the financial activities of the company and help in influencing the future direction of the company.
+She is a Chartered Certified Accountant and a Fellow of the Association of Chartered Certified Accountants (ACCA-UK) with over 25 years of experience in Treasury Management and Financial Accounting in the Telecom Industry.
+Patricia has performed diverse roles in the areas of Finance and Accounting.  She is a business focused leader who is passion driven with excellent leadership and teambuilding skills.
+
+With her experience in Finance and accounting in the telecom industry, Patricia bring a wealth of experience to company.
+`,
       linkedInUrl:
         'https://www.linkedin.com/in/patricia-abla-quansah-6503a8153',
     },
