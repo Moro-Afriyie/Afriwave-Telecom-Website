@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   // ];
   slides: Slide[] = [
     {
-      title: 'Interconnect Clearing House (ICH)',
+      title: 'Interconnect ClearingHouse (ICH)',
       info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
       imageUrl: 'https://www.afriwavetelecom.com/img/banner3.jpg',
       link: '',

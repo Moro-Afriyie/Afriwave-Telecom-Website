@@ -22,12 +22,23 @@ body {
 
   .grid-cleints-cols-minmax {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
   .grid-cleints-cols-minmax-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+.traffic-routing {
+  #dropdown {
+    display: none;
+  }
+  &:hover {
+    #dropdown {
+      display: block;
+    }
   }
 }
 

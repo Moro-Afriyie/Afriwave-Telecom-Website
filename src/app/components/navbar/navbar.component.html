@@ -80,6 +80,7 @@
           </ul>
         </div>
       </li>
+
       <li class="group cursor-pointer hover:font-bold relative">
         <p class="flex gap-3 items-center">
           Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
@@ -95,26 +96,44 @@
           >
             <li routerLink="/services/ich" routerLinkActive="dropdown-active">
               <a class="block py-2 px-4 hover:bg-gray-100"
-                >Interconnect Clearing House (ICH)</a
+                >Interconnect ClearingHouse (ICH)</a
               >
-            </li>
-            <li
-              routerLink="/services/traffic-routing"
-              routerLinkActive="dropdown-active"
-            >
-              <a class="block py-2 px-4 hover:bg-gray-100">Traffic Routing</a>
-            </li>
-            <li
-              routerLink="/services/telecomunications-network"
-              routerLinkActive="dropdown-active"
-            >
-              <a class="block py-2 px-4 hover:bg-gray-100">SMS Services</a>
             </li>
             <li
               routerLink="/services/data-centers"
               routerLinkActive="dropdown-active"
             >
               <a class="block py-2 px-4 hover:bg-gray-100">Data Centers</a>
+            </li>
+            <li
+              routerLink="/services/traffic-routing"
+              routerLinkActive="dropdown-active"
+              class="traffic-routing"
+            >
+              <p class="flex gap-3 items-center py-2 px-4 hover:bg-gray-100">
+                Traffic Routing
+                <span class="iconify" data-icon="ep:arrow-down-bold"></span>
+              </p>
+              <div
+                id="dropdown"
+                class="w-full bg-white rounded divide-y divide-gray-100 shadow-md"
+              >
+                <ul
+                  class="py-1 text-base font-normal"
+                  aria-labelledby="dropdownDefault"
+                >
+                  <li routerLink="" routerLinkActive="dropdown-active">
+                    <a class="block py-2 px-4 hover:bg-gray-100"
+                      >SMS Services</a
+                    >
+                  </li>
+                  <li routerLink="" routerLinkActive="dropdown-active">
+                    <a class="block py-2 px-4 hover:bg-gray-100"
+                      >Voice Routing</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -249,7 +268,7 @@
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Interconnect Clearing House (ICH)</a
+                  >Interconnect ClearingHouse (ICH)</a
                 >
               </li>
               <li
