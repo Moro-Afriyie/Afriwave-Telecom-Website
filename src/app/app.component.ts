@@ -31,15 +31,23 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     AOS.init();
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+    const excludedUrls = [
+      'blog',
+      'careers',
+      'contact',
+      'privacy',
+      'about',
+      'data-centers',
+    ];
+
+    // Subscribe to router events
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Route has changed, perform actions or logic here
-        this.showClients = this.showClients =
-          !this.router.url.includes('blog') &&
-          !this.router.url.includes('careers') &&
-          !this.router.url.includes('contact') &&
-          !this.router.url.includes('privacy');
+        const currentUrl = this.router.url;
+        this.showClients = !excludedUrls.some((url) =>
+          currentUrl.includes(url)
+        );
       }
     });
   }

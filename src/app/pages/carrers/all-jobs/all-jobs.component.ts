@@ -10,18 +10,18 @@ import { CareerServiceService } from 'src/app/services/careers/career-service.se
   styleUrls: ['./all-jobs.component.scss'],
 })
 export class AllJobsComponent implements OnInit {
-  jobs$: Observable<Job[]>;
+  // jobs$: Observable<Job[]>;
   isLoading = false;
 
   constructor(
     private firestore: AngularFirestore,
     private carrerService: CareerServiceService
   ) {
-    this.jobs$ = this.onGetAllJobsCollection();
-    this.jobs$.subscribe((job) => {
-      this.carrerService.setJobs(job);
-      this.isLoading = false;
-    });
+    // this.jobs$ = this.onGetAllJobsCollection();
+    // this.jobs$.subscribe((job) => {
+    //   this.carrerService.setJobs(job);
+    //   this.isLoading = false;
+    // });
   }
 
   ngOnInit(): void {}

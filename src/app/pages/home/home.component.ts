@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   slides: Slide[] = [
     {
       title: 'Interconnect ClearingHouse (ICH)',
-      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      info: 'In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of clearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)',
       imageUrl: 'https://www.afriwavetelecom.com/img/banner3.jpg',
       link: '',
     },
@@ -47,15 +47,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
         'https://res.cloudinary.com/moroafriyie/image/upload/v1683477445/my%20uploads/ssh2xnsjzq6l8zqxjwhf.jpg',
       link: '',
     },
-    {
-      title: 'SMS Service',
-      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
-      imageUrl: 'https://www.afriwavetelecom.com/img/banner2.jpg',
-      link: '',
-    },
+    // {
+    //   title: 'SMS Service',
+    //   info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+    //   imageUrl: 'https://www.afriwavetelecom.com/img/banner2.jpg',
+    //   link: '',
+    // },
     {
       title: 'Data Centers',
-      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      info: 'Afriwave Telecom Ghana Limited and Onix Data Center have entered into a reselling Agreement pursuant to the resale of Onix Data Center colocation services. As a Tier IV enterprise class facility, which is the highest level for a Data Center, Onix offers a stable, reliable, and uninterrupted service with an annual expected uptime of 99.995%.',
       link: '',
       imageUrl:
         'https://www.intelligentdatacentres.com/wp-content/uploads/sites/34/2020/08/AdobeStock_350459236-WEBISTE.jpg',

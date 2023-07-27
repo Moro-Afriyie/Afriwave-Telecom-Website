@@ -30,10 +30,10 @@ import { IchComponent } from './pages/services/ich/ich.component';
 import { TrafficMonitoringComponent } from './pages/services/traffic-monitoring/traffic-monitoring.component';
 import { TelecomunicationsNetworkComponent } from './pages/services/telecomunications-network/telecomunications-network.component';
 import { DataCentersComponent } from './pages/services/data-centers/data-centers.component';
-import { TruncatePipe } from './truncate.pipe';
 import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.component';
 import { BlogService } from './blog.service';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -58,7 +58,6 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
     TrafficMonitoringComponent,
     TelecomunicationsNetworkComponent,
     DataCentersComponent,
-    TruncatePipe,
     BlogDetailsComponent,
     PrivacyComponent,
   ],
@@ -70,6 +69,7 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    SharedModule,
   ],
   providers: [BlogService],
   bootstrap: [AppComponent],

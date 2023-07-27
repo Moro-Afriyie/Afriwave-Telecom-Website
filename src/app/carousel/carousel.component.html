@@ -32,7 +32,7 @@
         <p
           class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
         >
-          {{ slide.info }}
+          {{ slide.info | truncate : 250 }}
         </p>
       </div>
     </div>
