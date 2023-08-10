@@ -34,6 +34,7 @@ import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.com
 import { BlogService } from './blog.service';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { SharedModule } from './shared/shared.module';
+import { SmsServicesComponent } from './pages/services/sms-services/sms-services.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SharedModule } from './shared/shared.module';
     DataCentersComponent,
     BlogDetailsComponent,
     PrivacyComponent,
+    SmsServicesComponent,
   ],
   imports: [
     //CarouselModule,

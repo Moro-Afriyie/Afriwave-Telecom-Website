@@ -17,6 +17,7 @@ import { TelecomunicationsNetworkComponent } from './pages/services/telecomunica
 import { DataCentersComponent } from './pages/services/data-centers/data-centers.component';
 import { BlogListComponent } from './pages/blog/blog-list/blog-list.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { SmsServicesComponent } from './pages/services/sms-services/sms-services.component';
 
 const routes: Routes = [
   // {
@@ -46,6 +47,14 @@ const routes: Routes = [
   {
     path: 'services/traffic-routing',
     component: TrafficMonitoringComponent,
+  },
+  {
+    path: 'services/traffic-routing',
+    component: TrafficMonitoringComponent,
+  },
+  {
+    path: 'services/sms-services',
+    component: SmsServicesComponent,
   },
   {
     path: 'services/telecomunications-network',

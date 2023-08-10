@@ -105,11 +105,7 @@
             >
               <a class="block py-2 px-4 hover:bg-gray-100">Data Centers</a>
             </li>
-            <li
-              routerLink="/services/traffic-routing"
-              routerLinkActive="dropdown-active"
-              class="traffic-routing"
-            >
+            <li class="traffic-routing">
               <p class="flex gap-3 items-center py-2 px-4 hover:bg-gray-100">
                 Traffic Routing
                 <span class="iconify" data-icon="ep:arrow-down-bold"></span>
@@ -122,7 +118,10 @@
                   class="py-1 text-base font-normal"
                   aria-labelledby="dropdownDefault"
                 >
-                  <li routerLink="" routerLinkActive="dropdown-active">
+                  <li
+                    routerLink="/services/sms-services"
+                    routerLinkActive="dropdown-active"
+                  >
                     <a class="block py-2 px-4 hover:bg-gray-100"
                       >SMS Services</a
                     >
@@ -271,15 +270,11 @@
                   >Interconnect ClearingHouse (ICH)</a
                 >
               </li>
-              <li
-                routerLink="/services/traffic-routing"
-                routerLinkActive="dropdown-active"
-                (click)="onCloseDropdownMenu()"
-              >
+              <li (click)="onCloseDropdownMenu()">
                 <a class="block py-2 px-4 hover:bg-gray-100">Traffic Routing</a>
               </li>
               <li
-                routerLink="/services/telecomunications-network"
+                routerLink="/services/sms-services"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >

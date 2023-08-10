@@ -126,12 +126,9 @@
           </h5>
 
           <p
-            class="mb-3 font-normal flex-grow text-gray-700 dark:text-gray-400"
+            class="mb-3 font-normal text-sm flex-grow text-gray-700 dark:text-gray-400"
           >
-            {{
-              "In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of clearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)"
-                | truncate : 250
-            }}
+            {{ ich | truncate : 600 }}
           </p>
           <a
             routerLink="services/ich"
@@ -173,12 +170,9 @@
           </h5>
 
           <p
-            class="mb-3 font-normal flex-grow text-gray-700 dark:text-gray-400"
+            class="mb-3 font-normal text-sm flex-grow text-gray-700 dark:text-gray-400"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            quae, voluptates autem quos doloremque, modi consequatur accusamus
-            optio earum neque maxime explicabo veniam a adipisci inventore
-            ipsum. Provident, ipsa earum.
+            {{ trafficRouting | truncate : 600 }}
           </p>
           <a
             routerLink="/services/traffic-routing"
@@ -203,7 +197,7 @@
       </div>
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
-      <!-- <div
+      <div
         class="w-full text-text-black min-h-[30rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white tablet:border-r-2 tablet:border-gray-200"
         data-aos="fade-up"
         data-aos-delay="500"
@@ -220,12 +214,9 @@
           </h5>
 
           <p
-            class="mb-3 font-normal flex-grow text-gray-700 dark:text-gray-400"
+            class="mb-3 font-normal text-sm flex-grow text-gray-700 dark:text-gray-400"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            praesentium nobis consectetur voluptate nisi. Officiis,
-            necessitatibus excepturi quis possimus libero nobis beatae. Officia,
-            ab? Error totam asperiores voluptate dignissimos accusamus!
+            {{ smsServices | truncate : 600 }}
           </p>
           <a
             routerLink="/services/telecomunications-network"
@@ -247,7 +238,7 @@
             </svg>
           </a>
         </div>
-      </div> -->
+      </div>
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
@@ -267,12 +258,9 @@
           </h5>
 
           <p
-            class="mb-3 font-normal flex-grow text-gray-700 dark:text-gray-400"
+            class="mb-3 font-normal text-sm flex-grow text-gray-700 dark:text-gray-400"
           >
-            {{
-              "Afriwave Telecom Ghana Limited and Onix Data Center have entered into a reselling Agreement pursuant to the resale of Onix Data Center colocation services. As a Tier IV enterprise class facility, which is the highest level for a Data Center, Onix offers a stable, reliable, and uninterrupted service with an annual expected uptime of 99.995%."
-                | truncate : 250
-            }}
+            {{ dataCenters | truncate : 600 }}
           </p>
           <a
             routerLink="services/data-centers"
