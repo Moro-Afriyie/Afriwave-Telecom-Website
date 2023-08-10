@@ -1,3 +1,4 @@
+import { GalleryComponent } from './pages/blog/gallery/gallery.component';
 import { BlogDetailsComponent } from './pages/blog/blog-details/blog-details.component';
 import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
 import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.component';
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: 'services/sms-services',
     component: SmsServicesComponent,
+  },
+  {
+    path: 'photo-gallery',
+    component: GalleryComponent,
   },
   {
     path: 'services/telecomunications-network',
