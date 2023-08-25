@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   slides: Slide[] = [
     {
       title: 'Interconnect ClearingHouse (ICH)',
-      info: 'In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of clearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)',
+      info: 'In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of ClearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)',
       imageUrl: 'https://www.afriwavetelecom.com/img/banner3.jpg',
       link: '',
     },
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     //   link: '',
     // },
     {
-      title: 'Data Centers',
+      title: 'Data Center Services',
       info: 'Afriwave Telecom Ghana Limited and Onix Data Center have entered into a reselling Agreement pursuant to the resale of Onix Data Center colocation services. As a Tier IV enterprise class facility, which is the highest level for a Data Center, Onix offers a stable, reliable, and uninterrupted service with an annual expected uptime of 99.995%.',
       link: '',
       imageUrl:
@@ -68,7 +68,7 @@ Streamline your operations and effortlessly deliver both A2P and P2P SMS service
 From seamless messaging to expanded coverage and transparent billing, revolutionise your communication strategy with ease. Join us in unlocking the true power of SMS and gain a competitive edge in the market. Partner with us today for simplified access and unparalleled opportunities in the VAS landscape…
 `;
 
-  ich = `In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of clearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)`;
+  ich = `In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of ClearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)`;
   trafficRouting = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae, voluptates autem quos doloremque, modi consequatur accusamus optio earum neque maxime explicabo veniam a adipisci inventore ipsum. Provident, ipsa earum.`;
   dataCenters = `Afriwave Telecom Ghana Limited and Onix Data Center have entered into a reselling Agreement pursuant to the resale of Onix Data Center colocation services. As a Tier IV enterprise class facility, which is the highest level for a Data Center, Onix offers a stable, reliable, and uninterrupted service with an annual expected uptime of 99.995%.`;
 

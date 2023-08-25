@@ -36,6 +36,7 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { SharedModule } from './shared/shared.module';
 import { SmsServicesComponent } from './pages/services/sms-services/sms-services.component';
 import { GalleryComponent } from './pages/blog/gallery/gallery.component';
+import { VoiceRoutingComponent } from './pages/services/voice-routing/voice-routing.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { GalleryComponent } from './pages/blog/gallery/gallery.component';
     PrivacyComponent,
     SmsServicesComponent,
     GalleryComponent,
+    VoiceRoutingComponent,
   ],
   imports: [
     //CarouselModule,

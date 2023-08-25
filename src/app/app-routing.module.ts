@@ -19,6 +19,7 @@ import { DataCentersComponent } from './pages/services/data-centers/data-centers
 import { BlogListComponent } from './pages/blog/blog-list/blog-list.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { SmsServicesComponent } from './pages/services/sms-services/sms-services.component';
+import { VoiceRoutingComponent } from './pages/services/voice-routing/voice-routing.component';
 
 const routes: Routes = [
   // {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'services/traffic-routing',
     component: TrafficMonitoringComponent,
+  },
+  {
+    path: 'services/voice-routing',
+    component: VoiceRoutingComponent,
   },
   {
     path: 'services/sms-services',

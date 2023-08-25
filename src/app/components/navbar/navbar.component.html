@@ -103,7 +103,9 @@
               routerLink="/services/data-centers"
               routerLinkActive="dropdown-active"
             >
-              <a class="block py-2 px-4 hover:bg-gray-100">Data Centers</a>
+              <a class="block py-2 px-4 hover:bg-gray-100"
+                >Data Center Services</a
+              >
             </li>
             <li class="traffic-routing">
               <p class="flex gap-3 items-center py-2 px-4 hover:bg-gray-100">
@@ -126,7 +128,10 @@
                       >SMS Services</a
                     >
                   </li>
-                  <li routerLink="" routerLinkActive="dropdown-active">
+                  <li
+                    routerLink="/services/voice-routing"
+                    routerLinkActive="dropdown-active"
+                  >
                     <a class="block py-2 px-4 hover:bg-gray-100"
                       >Voice Routing</a
                     >
@@ -285,7 +290,9 @@
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
-                <a class="block py-2 px-4 hover:bg-gray-100">Data Centers</a>
+                <a class="block py-2 px-4 hover:bg-gray-100"
+                  >Data Center Services</a
+                >
               </li>
             </ul>
           </div>
