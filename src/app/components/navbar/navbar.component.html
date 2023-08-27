@@ -55,7 +55,7 @@
             </li>
             <li routerLink="/about/vision" routerLinkActive="dropdown-active">
               <a class="block py-2 px-4 hover:bg-gray-100"
-                >Vision, Mission & Values</a
+                >Mission ,Vision & Values</a
               >
             </li>
             <li
@@ -225,7 +225,7 @@
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100"
-                  >Vision, Mission & Values</a
+                  >Mission ,Vision & Values</a
                 >
               </li>
               <li
@@ -275,15 +275,19 @@
                   >Interconnect ClearingHouse (ICH)</a
                 >
               </li>
-              <li (click)="onCloseDropdownMenu()">
-                <a class="block py-2 px-4 hover:bg-gray-100">Traffic Routing</a>
-              </li>
               <li
                 routerLink="/services/sms-services"
                 routerLinkActive="dropdown-active"
                 (click)="onCloseDropdownMenu()"
               >
                 <a class="block py-2 px-4 hover:bg-gray-100">SMS Services</a>
+              </li>
+              <li
+                routerLink="/services/voice-routing"
+                routerLinkActive="dropdown-active"
+                (click)="onCloseDropdownMenu()"
+              >
+                <a class="block py-2 px-4 hover:bg-gray-100">Voice Routing</a>
               </li>
               <li
                 routerLink="/services/data-centers"
