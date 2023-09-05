@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
     {
       title: 'Traffic Routing',
-      info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nobis quis accusantium, dolore esse nostrum eius odit veritatis repellat fugit cum praesentium qui impedit, laboriosam voluptatum illo, itaque totam distinctio!',
+      info: `Afriwave Telecom, an authorized ICH operator approved by the NCA, plays a pivotal role in streamlining the routing of National and International Interconnect Traffic, ensuring transparent reconciliation and centralized connectivity across Ghana's communication landscape`,
       imageUrl:
         'https://res.cloudinary.com/moroafriyie/image/upload/v1683477445/my%20uploads/ssh2xnsjzq6l8zqxjwhf.jpg',
       link: '',
@@ -69,7 +69,7 @@ From seamless messaging to expanded coverage and transparent billing, revolution
 `;
 
   ich = `In 2015, Afriwave Telecom Ghana Limited secured the license from the Government of Ghana through the National Communications Authority to build and operate facilities for the provision and operation of ClearingHouse services, pursuant to the provisions of National Communications Act, 2008 (Act,769)`;
-  trafficRouting = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae, voluptates autem quos doloremque, modi consequatur accusamus optio earum neque maxime explicabo veniam a adipisci inventore ipsum. Provident, ipsa earum.`;
+  trafficRouting = `Afriwave Telecom, an authorized ICH operator approved by the NCA, plays a pivotal role in streamlining the routing of National and International Interconnect Traffic, ensuring transparent reconciliation and centralized connectivity across Ghana's communication landscape`;
   dataCenters = `Afriwave Telecom Ghana Limited and Onix Data Center have entered into a reselling Agreement pursuant to the resale of Onix Data Center colocation services. As a Tier IV enterprise class facility, which is the highest level for a Data Center, Onix offers a stable, reliable, and uninterrupted service with an annual expected uptime of 99.995%.`;
 
   constructor() {}
