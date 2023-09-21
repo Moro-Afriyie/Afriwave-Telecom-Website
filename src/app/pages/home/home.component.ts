@@ -79,7 +79,7 @@ From seamless messaging to expanded coverage and transparent billing, revolution
     // autoslide items
     setInterval(() => {
       this.carousel.onNextClick();
-    }, 6000);
+    }, 12000);
   }
 
   setAnimationType(type: any) {
