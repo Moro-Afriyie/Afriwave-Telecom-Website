@@ -24,7 +24,11 @@
   <section
     class="my-16 px-6 py-4 sm:px-10 sm:py-6 flex w-full items-center gap-8 flex-col justify-center"
   >
-    <div class="sm:columns-2 md:columns-3 lg:columns-5 gap-4">
+    <app-loader *ngIf="isLoading"></app-loader>
+    <div
+      *ngIf="!isLoading"
+      class="sm:columns-2 md:columns-3 lg:columns-5 gap-4"
+    >
       <div
         class="mb-4 mt-0 w-full h-full relative cursor-pointer sm:rounded-3xl overflow-hidden group min-w-0 break-inside-avoid"
         *ngFor="let item of images"

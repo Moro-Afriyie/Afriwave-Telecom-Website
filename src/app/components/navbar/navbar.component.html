@@ -164,6 +164,13 @@
       >
         <a>Blogs</a>
       </li>
+      <li
+        routerLink="/photo-gallery"
+        class="hover:font-bold cursor-pointer"
+        routerLinkActive="active"
+      >
+        <a>Gallery</a>
+      </li>
     </ul>
     <!--End nav links-->
   </div>
@@ -325,6 +332,14 @@
           (click)="onCloseDropdownMenu()"
         >
           <a>Blogs</a>
+        </li>
+        <li
+          class="hover:font-bold cursor-pointer"
+          routerLink="/photo-gallery"
+          routerLinkActive="active"
+          (click)="onCloseDropdownMenu()"
+        >
+          <a>Gallery</a>
         </li>
       </ul>
     </div>

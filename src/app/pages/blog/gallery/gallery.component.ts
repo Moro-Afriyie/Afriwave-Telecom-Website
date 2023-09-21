@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-gallery',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
+  isLoading = false;
+  galleryData$: Observable<any[]>;
+
   images = [
     'https://www.afriwavetelecom.com/index_files/vlb_images1/ep1.JPG',
     'https://www.afriwavetelecom.com/index_files/vlb_images1/ep2.JPG',
@@ -26,7 +31,21 @@ export class GalleryComponent implements OnInit {
     'https://www.afriwavetelecom.com/index_files/vlb_images1/dsc001.jpg',
   ];
 
-  constructor() {}
+  constructor(private firestore: AngularFirestore) {
+    this.galleryData$ = this.onGetAllJobsCollection();
+    this.galleryData$.subscribe((job) => {
+      // this.carrerService.setJobs(job);
+      this.isLoading = false;
+    });
+  }
 
   ngOnInit(): void {}
+
+  onGetAllJobsCollection(): Observable<any[]> {
+    this.isLoading = true;
+    return this.firestore
+      .collection('gallery')
+      .valueChanges()
+      .pipe(map((data: any) => data));
+  }
 }
