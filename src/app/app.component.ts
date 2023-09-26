@@ -38,6 +38,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       'privacy',
       'about',
       'data-centers',
+      'gallery',
     ];
 
     // Subscribe to router events
