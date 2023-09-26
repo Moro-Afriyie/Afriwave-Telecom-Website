@@ -28,6 +28,7 @@ module.exports = {
         "text-gray": "#6F6D71",
         "border-gray": "#CDCBCF",
         overlay: "rgba(0, 0, 0, 0.6)",
+        gallery: "rgba(0, 0, 0, 0.3)",
         modalBackground: "rgba(0, 0, 0, 0.89)",
         "text-heading": "#183b84",
       },
