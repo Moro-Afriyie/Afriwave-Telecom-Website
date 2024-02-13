@@ -8,6 +8,28 @@ import { Observable } from 'rxjs';
 export class BlogService {
   blogList = [
     {
+      id: 6,
+      title: `Afriwave Telecom transforms Teshie Orphanage Library into state-of-the-art facility`,
+      imageUrl:
+        'https://i0.wp.com/gna.org.gh/web/wp-content/uploads/2023/12/Afriwave-orphanage1-scaled.jpg?fit=2560%2C1707&ssl=1',
+      blogContent: `
+<p>Accra, Dec. 1, GNA –<strong> </strong>The management and children of Teshie Orphanage were filled with happiness and excitement when Afriwave Telecom Ghana Limited upgraded their library to a modern standard and provided it with state-of-the-art learning equipment.&nbsp;</p>
+<br />
+<p>Afriwave, an indigenous company that operates and manages Ghana’s interconnect clearing house (ICH), refurbished the library and resourced it with a thousand space bookshelves and six desktop computers with one year of internet subscription.&nbsp;</p>
+<br />
+<p>Mr. Lord Aboagye, Corporate Affairs Officer of Afriwave Telecom Ghana, said in a statement copied to the Ghana News Agency on Friday that upgrading the Orphanage Library into a cutting-edge facility would greatly help the children. &nbsp;</p>
+<br />
+<p>The initiative exemplifies Afriwave Telecom’s commitment to supporting and improving educational resources for those who are underprivileged.&nbsp;</p>
+<br />
+<p>Mr. Francis Poku, Deputy Chief Executive Officer of Afriwave Telecom, was quoted in the statement as adding that the library refurbishment was part of the company’s mission to make a sustainable impact on the lives of disadvantaged children.&nbsp;</p>
+
+
+ `,
+      link: '',
+      createdAt: new Date('Dec 1, 2023'),
+      location: 'Accra',
+    },
+    {
       id: 1,
       title: `Smart Africa and Afriwave Telecom enter into an agreement to advance connectivity and data capacity in Africa`,
       imageUrl: '../../../../assets/smartafrica.jpg',
