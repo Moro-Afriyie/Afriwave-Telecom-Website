@@ -13,7 +13,7 @@ export class BlogService {
       imageUrl:
         'https://i0.wp.com/gna.org.gh/web/wp-content/uploads/2023/12/Afriwave-orphanage1-scaled.jpg?fit=2560%2C1707&ssl=1',
       blogContent: `
-<p>Accra, Dec. 1, GNA –<strong> </strong>The management and children of Teshie Orphanage were filled with happiness and excitement when Afriwave Telecom Ghana Limited upgraded their library to a modern standard and provided it with state-of-the-art learning equipment.&nbsp;</p>
+<p>The management and children of Teshie Orphanage were filled with happiness and excitement when Afriwave Telecom Ghana Limited upgraded their library to a modern standard and provided it with state-of-the-art learning equipment.&nbsp;</p>
 <br />
 <p>Afriwave, an indigenous company that operates and manages Ghana’s interconnect clearing house (ICH), refurbished the library and resourced it with a thousand space bookshelves and six desktop computers with one year of internet subscription.&nbsp;</p>
 <br />
@@ -22,6 +22,30 @@ export class BlogService {
 <p>The initiative exemplifies Afriwave Telecom’s commitment to supporting and improving educational resources for those who are underprivileged.&nbsp;</p>
 <br />
 <p>Mr. Francis Poku, Deputy Chief Executive Officer of Afriwave Telecom, was quoted in the statement as adding that the library refurbishment was part of the company’s mission to make a sustainable impact on the lives of disadvantaged children.&nbsp;</p>
+<br />
+<p>“When we, Afriwave, provide support of any kind, our focus is to look at how sustainable and impactful the support is,” he said, adding, “There is no better way of ensuring the sustainability of an initiative than to invest in the education of our future leaders.”&nbsp;</p>
+<br />
+<p>He indicated that Afriwave Telecom would soon launch its SMS platform, which would create a single point for all value-added service (VAS) providers to gain access to mobile network operators from one place.&nbsp;</p>
+<br />
+<p>Shedding light on the SMS platform, Mr. Poku noted that Afriwave’s SMS platform would help expand the communications needs of customers that route through the ICH.&nbsp;</p>
+<br />
+<p>He further said that the SMS platform would not only expand the communications needs of customers but would also allow them to experience seamless messaging and transparency in billing.&nbsp;</p>
+<br />
+<p>This would enable customers to stay in control of costs and make informed decisions.&nbsp;</p>
+<br />
+<p>He urged VAS providers, banks, corporate organisations, and players in the telecom industry to take advantage of the platform for their messaging needs.&nbsp;</p>
+<br />
+<p>Currently, the ICH is fully connected to all the telecommunication providers in Ghana and is already carrying all interconnect voice traffic in the country.&nbsp;</p>
+<br/>
+<p>Mr. Poku urged the orphanage to continue to nurture these young children to restore the confidence they need as children to grow into better adults.&nbsp;</p>
+<br />
+<p>Mr. and Mrs. Parker, founders of the home, thanked Afriwave for their generosity at such a crucial time of the year.&nbsp;</p>
+<br />
+<p>Mrs. Parker further expressed her gratitude to the entire management and staff of Afriwave for nominating the home to be recognised in such a manner.&nbsp;</p>
+<br />
+<p>Teshie Orphanage is a private and nongovernmental organisation that provides shelter and a homely atmosphere for orphans and vulnerable children within the Teshie community.&nbsp;</p>
+<br />
+<p>It is managed with the assistance of benevolent individuals and organisations to educate and care for these children and equip them to face the challenges of the world.&nbsp;</p>
 
 
  `,
