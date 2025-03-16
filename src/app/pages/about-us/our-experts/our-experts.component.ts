@@ -40,20 +40,20 @@ Delali possesses strong leadership skills as evidenced in various capacities of 
 Delali holds a Bachelor's Degree in Information & Communication Technology (ICT) from the Ghana Institute of Management and Public Administration (GIMPA) and a Higher National Diploma in Electrical/Electronic Engineering from the Takoradi Technical University.`,
       linkedInUrl: 'https://www.linkedin.com/in/delali-blekpe-4b9093b/',
     },
-    {
-      id: 5,
-      name: 'Patricia Abla Quansah',
-      position: 'Chief Finance Officer',
-      imageUrl: '../../../../assets/AfriwaveManagement/CFO.jpeg',
-      details: `Patricia Abla Quansah is the Chief Financial Officer, responsible for managing the financial activities of the company and help in influencing the future direction of the company.
-She is a Chartered Certified Accountant and a Fellow of the Association of Chartered Certified Accountants (ACCA-UK) with over 25 years of experience in Treasury Management and Financial Accounting in the Telecom Industry.
-Patricia has performed diverse roles in the areas of Finance and Accounting.  She is a business focused leader who is passion driven with excellent leadership and teambuilding skills.
+    //     {
+    //       id: 5,
+    //       name: 'Patricia Abla Quansah',
+    //       position: 'Chief Finance Officer',
+    //       imageUrl: '../../../../assets/AfriwaveManagement/CFO.jpeg',
+    //       details: `Patricia Abla Quansah is the Chief Financial Officer, responsible for managing the financial activities of the company and help in influencing the future direction of the company.
+    // She is a Chartered Certified Accountant and a Fellow of the Association of Chartered Certified Accountants (ACCA-UK) with over 25 years of experience in Treasury Management and Financial Accounting in the Telecom Industry.
+    // Patricia has performed diverse roles in the areas of Finance and Accounting.  She is a business focused leader who is passion driven with excellent leadership and teambuilding skills.
 
-With her experience in Finance and accounting in the telecom industry, Patricia bring a wealth of experience to company.
-`,
-      linkedInUrl:
-        'https://www.linkedin.com/in/patricia-abla-quansah-6503a8153',
-    },
+    // With her experience in Finance and accounting in the telecom industry, Patricia bring a wealth of experience to company.
+    // `,
+    //       linkedInUrl:
+    //         'https://www.linkedin.com/in/patricia-abla-quansah-6503a8153',
+    //     },
     {
       id: 6,
       name: 'Ernest Poku',
