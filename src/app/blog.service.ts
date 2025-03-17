@@ -119,6 +119,18 @@ export class BlogService {
       createdAt: new Date('18 August 2024'),
       location: 'Accra',
     },
+    {
+      id: 7,
+      title: `Afriwave Telecom pays a working visit to NCA boss`,
+      imageUrl:
+        'https://www.myjoyonline.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-11-at-11.29.12-283x424.jpeg',
+      blogContent: `
+      <span>The management of Afriwave Telecom Ghana Limited, led by the company&#8217;s Deputy Chief Executive Officer, Francis Poku, today, paid a working visit to the Director General of the National Communications Authority (NCA), at the NCA Tower in Accra.</span><p><span>The purpose of the visit was to officially introduce the management of Afriwave Telecom and update Rev. Ing. Edmund Yirenkyi Fianko the Acting Director General of the NCA, on the implementation and progress of the Inter-connect Clearing House (ICH).</span><span></span></p><p><span>Mr. Poku, on behalf of Afriwave Telecom, took the opportunity to congratulate Rev. Ing. Fianko on his appointment as the Acting Director General of the NCA.</span><span></span></p><p><span>He further expressed his commitment in working with the NCA to ensure that Afriwave adheres to the Authority&#8217;s regulatory requirements, providing the best of services in inter-connecting.</span><span></span></p><p><span>He concluded by calling on the Director General to give all the support he can for the growth of the telecom industry in Ghana.</span><span></span></p><p><span>Welcoming the team Afriwave, Rev. Ing. Edmund Fianko stated that the NCA is pleased with Afriwave&#8217;s&#160; visit and acknowledged issues raised by the management of the company.</span><span></span></p><p><span>He assured Afriwave of his commitment to work closely with them to grow the industry for the betterment of Ghana.</span><span></span></p>
+`,
+      link: '',
+      createdAt: new Date('11 March 2025'),
+      location: 'Accra',
+    },
   ];
   constructor() {}
 
