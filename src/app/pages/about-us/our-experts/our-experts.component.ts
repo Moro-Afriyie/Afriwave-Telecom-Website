@@ -40,20 +40,20 @@ Delali possesses strong leadership skills as evidenced in various capacities of 
 Delali holds a Bachelor's Degree in Information & Communication Technology (ICT) from the Ghana Institute of Management and Public Administration (GIMPA) and a Higher National Diploma in Electrical/Electronic Engineering from the Takoradi Technical University.`,
       linkedInUrl: 'https://www.linkedin.com/in/delali-blekpe-4b9093b/',
     },
-    //     {
-    //       id: 5,
-    //       name: 'Patricia Abla Quansah',
-    //       position: 'Chief Finance Officer',
-    //       imageUrl: '../../../../assets/AfriwaveManagement/CFO.jpeg',
-    //       details: `Patricia Abla Quansah is the Chief Financial Officer, responsible for managing the financial activities of the company and help in influencing the future direction of the company.
-    // She is a Chartered Certified Accountant and a Fellow of the Association of Chartered Certified Accountants (ACCA-UK) with over 25 years of experience in Treasury Management and Financial Accounting in the Telecom Industry.
-    // Patricia has performed diverse roles in the areas of Finance and Accounting.  She is a business focused leader who is passion driven with excellent leadership and teambuilding skills.
+    {
+      id: 5,
+      name: 'Thomas Gyabaah',
+      position: 'Chief Finance Officer',
+      imageUrl:
+        'https://firebasestorage.googleapis.com/v0/b/afriwave-telecom-site-rebuild.appspot.com/o/WhatsApp%20Image%202025-03-17%20at%2013.44.28.jpeg?alt=media&token=b9d60986-6da8-4b09-b6ee-8663094976c4',
+      details: `Thomas Gyabaah is an accomplished finance professional with over 20 years of experience driving financial excellence across multiple industries, including Engineering, Insurance and Advertising. He has a proven track record of delivering strategic financial planning, risk management, process flow management and leadership expertise.
 
-    // With her experience in Finance and accounting in the telecom industry, Patricia bring a wealth of experience to company.
-    // `,
-    //       linkedInUrl:
-    //         'https://www.linkedin.com/in/patricia-abla-quansah-6503a8153',
-    //     },
+He is results-driven and visionary leader with a unique blend of technical accounting expertise and business acumen. Skilled in financial planning, budgeting, financial reporting, human capital planning and risk management. Proficient at identifying and mitigating risks, improving business processes, and driving growth.
+
+He holds an MBA in Finance from Coventry University UK, a certified Project Management Professional and Agile Certified Professional from Project Management Institute USA.  He is a fellow of Association of Chartered Certified Accountants UK and member of Chartered Institute of Taxation, Ghana.
+    `,
+      linkedInUrl: '',
+    },
     {
       id: 6,
       name: 'Ernest Poku',
