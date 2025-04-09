@@ -108,7 +108,7 @@ export class BlogService {
       location: 'Accra',
     },
     {
-      id: 6,
+      id: 7,
       title: `Team Afriwave picks honours at 6th National Communications Awards`,
       imageUrl:
         'https://firebasestorage.googleapis.com/v0/b/afriwave-telecom-site-rebuild.appspot.com/o/Award%2FIMG_6850.JPG?alt=media&token=4c468970-ea78-4448-934a-ce696cfca0e9',
@@ -120,7 +120,7 @@ export class BlogService {
       location: 'Accra',
     },
     {
-      id: 7,
+      id: 8,
       title: `Afriwave Telecom pays a working visit to NCA boss`,
       imageUrl:
         'https://www.myjoyonline.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-11-at-11.29.12-283x424.jpeg',
