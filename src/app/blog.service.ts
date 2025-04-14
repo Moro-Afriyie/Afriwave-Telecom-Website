@@ -131,6 +131,18 @@ export class BlogService {
       createdAt: new Date('11 March 2025'),
       location: 'Accra',
     },
+    {
+      id: 9,
+      title: `Communication Minister meets Afriwave Telecom management`,
+      imageUrl:
+        'https://www.myjoyonline.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-11-at-12.07.34-636x424.jpeg',
+      blogContent: `
+     The Management of Afriwave Telecom has congratulated the Minister of Communication, Digital Technology and Innovation on his recent appointment by President Mahama.<br><br><p>The firm also took the opportunity to discuss key industry concerns, including revenue mobilisation and tariff adjustment affecting the Interconnect Clearinghouse (ICH).</p> <p>In his presentation, the Chairman of Board of Directors of Afriwave Telecom, David Poku outlined some of the benefits the Interconnect clearinghouse (ICH) has brought to the telecom industry.</p><p>He stated that the ICH has helped sanitize the interconnect ecosystem in the telecom industry by eliminating settlement disputes between Mobile Network Operators (MNOs), as there have been no disputes regarding settlements since the ICH became operational.</p><p>Mr. Poku proudly stated that the MNOs now issue invoices for national interconnect traffic among themselves without the slightest hesitation or fear due to the reconciled traffic information shared by the ICH, signaling trust in the ICH data.</p><p>He was also happy to note that the national interconnect traffic, which had been on a downward trend averaging around 800 million in 2016, is now averaging 930 million in the first quarter of 2025, expecting the numbers to increase in the second and third quarters respectfully.</p><p>David Poku also shared some of the challenges affecting the operations of Afriwave as an ICH operator.</p><p>He stated that some of the Mobile Network Operators (MNOs) are owing Afriwave the ICH services charge, hindering Afriwave's ability to meet its financial obligations, including statutory payments to some state institutions.</p><p>Mr. Poku expressed his worry about the four year review of the ICH service charge,&nbsp; explaining that most of Afriwave’s service providers charge in US dollars, while the ICH service is denominated in Ghana Cedis.&nbsp; He noted that this&nbsp; affects the financial viability&nbsp; of the business when the Cedi depreciate against the dollar.</p><p>Mr. Poku ended his presentation by requesting the assistance of the Honourable Minister to help solve their grievances to enable Afriwave Telecom stand on its feet as a Ghanaian owned company, and also assured the minister of his support in his term of office.</p><p>The Minister, Samuel Nartey George acknowledged the concerns raised by Afriwave Telecom and assured a meeting with the regulator, National Communication Authority (NCA) on the way forward.</p><p>He also warned that all license due for renewal under the telecom industry will be properly scrutinized before appending his signature, but assured his support to push the telecom industry to a higher level.</p><p><br></p><br>
+`,
+      link: '',
+      createdAt: new Date('11 April 2025'),
+      location: 'Accra',
+    },
   ];
   constructor() {}
 
